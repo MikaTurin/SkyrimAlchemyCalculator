@@ -7,10 +7,10 @@ use Skyrim\Lab;
 
 $perk = array(0, 20, 40, 60, 80, 100);
 
-
-$ingr = getIngredients();
-array_walk(Db::fetchAll(), function($el, $key, &$r) {  $r[0][$el['id']] = $el['name']; }, array(&$ingr));
+$ingr = array();
+array_walk(getIngredients(), function($el, $key, &$r) {  $r[0][$el['id']] = $el['name']; }, array(&$ingr));
 $ingr = array_merge(array('' => '-'), $ingr);
+
 
 $frm = new myform();
 $frm->cellspacing = 5;
