@@ -1,5 +1,5 @@
 <?php
-require('../inc/inc.php');
+require('./inc/inc.php');
 
 use Sys\Db;
 use Skyrim\Player\Vanilla as Player;
@@ -47,7 +47,7 @@ if ($frm->process()) {
 
 ?>
 <head>
-    <link rel="stylesheet" type="text/css" href="../assets/style.css">
+    <link rel="stylesheet" type="text/css" href="assets/style.css">
 </head>
 <div style="width:500px; margin:0 auto">
 <div style="width:1100px; margin:0 auto;">
