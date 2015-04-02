@@ -5,6 +5,12 @@ define('TBL_INGREDIENTS', 'ingredients');
 define('TBL_INGREDIENTS_STATS', 'ingredients_vanilla');
 define('TBL_EFFECTS', 'effects_vanilla');
 
+function getIngredients()
+{
+    Db::query("SELECT id,name FROM ingredients ORDER BY name");
+    return Db::fetchAll();
+}
+
 function getIngredientIdByName($name)
 {
     return Db::selectFieldByField(TBL_INGREDIENTS, 'id', array('name' => $name));

@@ -8,10 +8,9 @@ use Skyrim\Lab;
 $perk = array(0, 20, 40, 60, 80, 100);
 
 
-Db::query("SELECT id,name FROM ingredients ORDER BY name");
-$ingr = array();
+$ingr = getIngredients();
 array_walk(Db::fetchAll(), function($el, $key, &$r) {  $r[0][$el['id']] = $el['name']; }, array(&$ingr));
-
+$ingr = array_merge(array('' => '-'), $ingr);
 
 $frm = new myform();
 $frm->cellspacing = 5;
@@ -19,9 +18,9 @@ $frm->cellspacing = 5;
 $frm->add_control('textbox', 'skill', 'min')->setValue(15);
 $frm->add_control('textbox', 'fortify', 'min')->setValue(0);
 $frm->add_control('combobox', 'perkAlchemist')->loadArray(array_combine($perk, $perk));
-$frm->add_control('combobox', 'ingr1')->loadArray(array_merge(array('' => '-'), $ingr));
-$frm->add_control('combobox', 'ingr2')->loadArray(array_merge(array('' => '-'), $ingr));
-$frm->add_control('combobox', 'ingr3')->loadArray(array_merge(array('' => '-'), $ingr));
+$frm->add_control('combobox', 'ingr1')->loadArray($ingr);
+$frm->add_control('combobox', 'ingr2')->loadArray($ingr);
+$frm->add_control('combobox', 'ingr3')->loadArray($ingr);
 
 
 if ($frm->process()) {
