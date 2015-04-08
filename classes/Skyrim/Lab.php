@@ -1,6 +1,7 @@
 <?php
 namespace Skyrim;
 
+use Skyrim\Ingredient\EffectStat;
 use Skyrim\Player\Vanilla as Player;
 
 class Lab
@@ -25,12 +26,13 @@ class Lab
     public function __construct(Player $player, array $ingredients)
     {
         $this->player = $player;
+        $this->ingredientsCount = sizeof($ingredients);
 
-        $c = sizeof($ingredients);
-        if ($c < 2 || $c > 3) throw new \ErrorException('incorrect ingredient count, min 1, max 3');
+        if (!static::isIngredientCountCorrect($this->ingredientsCount)) {
+            throw new \ErrorException('incorrect ingredient count, min 2, max 3');
+        }
 
         foreach ($ingredients as $o) {
-            $this->ingredientsCount ++;
             $this->ingredients[$o->getId()] = $o;
         }
     }
@@ -40,6 +42,10 @@ class Lab
         return in_array($cnt, array(2, 3));
     }
 
+    /**
+     * @deprecated
+     * @return int
+     */
     public function isCommonEffects()
     {
         $this->calcCommonEffects();
@@ -48,16 +54,36 @@ class Lab
 
     public function calc()
     {
+        $power = $this->calcPowerFactor();
         $this->calcCommonEffects();
 
         for ($i = 0, $c = sizeof($this->commonEffects); $i < $c; $i++)
         {
             $effect = Effect::makeFromId($this->commonEffects[$i]);
-            $r = $this->getIngredientsEffectMaxValues($effect);
+            $effectStat = $this->getIngredientsEffectMaxValues($effect);
 
-            dump($r);
+            $magnitude = $this->calcMagnitude($effect, $effectStat, $power);
+            $duration = $this->calcDuration($effect, $effectStat, $power);
+
+            dump($effect);
+            dump($effectStat);
+            echo '<b style="color:darkred">'.$effect->createDescriptionText($magnitude, $duration).'</b>';
+            echo '<hr>';
         }
+    }
 
+    public function calcMagnitude(Effect $effect, EffectStat $effectStat, $power)
+    {
+        if (!$effect->isAmplifyMagnitude()) return round($effectStat->getBaseMagnitude());
+
+        return round($effectStat->getBaseMagnitude() * $power);
+    }
+
+    public function calcDuration(Effect $effect, EffectStat $effectStat, $power)
+    {
+        if (!$effect->isAmplifyDuration()) return round($effectStat->getBaseDuration());
+
+        return round($effectStat->getBaseDuration() * $power);
     }
 
     protected function calcCommonEffects()
@@ -91,19 +117,30 @@ class Lab
             $stat = $ingredient->getEffects()->get($effect->getId());
 
             if ($effect->getAmplify() == 'magnitude') {
-                if ($stat->getMagnitude() > $max) {
-                    $max = $stat->getMagnitude();
+                if ($stat->getBaseMagnitude() > $max) {
+                    $max = $stat->getBaseMagnitude();
                     $record = $stat;
                 }
             }
             else if ($effect->getAmplify() == 'duration') {
-                if ($stat->getDuration() > $max) {
-                    $max = $stat->getDuration();
+                if ($stat->getBaseDuration() > $max) {
+                    $max = $stat->getBaseDuration();
                     $record = $stat;
                 }
             }
         }
 
         return $record;
+    }
+
+    protected function calcPowerFactor()
+    {
+        return
+            $this->fAlchemyIngredientInitMult
+            * (1 + ($this->fAlchemySkillFactor - 1) * $this->player->getSkill() / 100)
+            * (1 + $this->player->getFortify() / 100)
+            * (1 + $this->player->getPerkAlchemist() / 100)
+            * (1 + $this->player->getPerkPhysician() / 100)
+            * (1 + $this->player->getPerkBenefactor() / 100 + $this->player->getPerkPoisoner() / 100);
     }
 }

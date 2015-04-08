@@ -2,13 +2,6 @@
 namespace Skyrim\Ingredient;
 use Skyrim\Structure;
 
-/**
- * @property-read int $id
- * @property-read float $duration
- * @property-read float $magnitude
- *
- * @package Skyrim\Ingredient
- */
 class EffectStat extends Structure
 {
     protected $id;
@@ -18,7 +11,7 @@ class EffectStat extends Structure
     /**
      * @return mixed
      */
-    public function getDuration()
+    public function getBaseDuration()
     {
         return $this->duration;
     }
@@ -34,7 +27,7 @@ class EffectStat extends Structure
     /**
      * @return mixed
      */
-    public function getMagnitude()
+    public function getBaseMagnitude()
     {
         return $this->magnitude;
     }

@@ -26,6 +26,16 @@ class Effect extends Structure
         return $this->amplify;
     }
 
+    public function isAmplifyMagnitude()
+    {
+        return ($this->amplify == 'magnitude'); #TODO: add magnitude+duration amplify
+    }
+
+    public function isAmplifyDuration()
+    {
+        return ($this->amplify == 'duration'); #TODO: add magnitude+duration amplify
+    }
+
     /**
      * @return mixed
      */
@@ -64,5 +74,10 @@ class Effect extends Structure
     public function getName()
     {
         return $this->name;
+    }
+
+    public function createDescriptionText($magnitude = 0, $duration = 0)
+    {
+        return str_replace('<dur>', $duration, str_replace('<mag>', $magnitude, $this->getDescription()));
     }
 }

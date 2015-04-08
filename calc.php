@@ -8,7 +8,7 @@ use Skyrim\Lab;
 $perk = array(0, 20, 40, 60, 80, 100);
 
 $ingr = array();
-array_walk(getIngredients(), function($el, $key, &$r) {  $r[0][$el['id']] = $el['name']; }, array(&$ingr));
+array_walk(getIngredients(), function($el, $key, &$r) {  $r[0][$el['id']] = $el['name'].' ['.$el['id'].']'; }, array(&$ingr));
 $ingr = array_merge(array('' => '-'), $ingr);
 
 
@@ -35,13 +35,12 @@ if ($frm->process()) {
 
     try {
         $lab = new Lab($player, $ingr);
+        $lab->calc();
     }
     catch (Exception $e) {
         dump($e->getMessage());
     }
-
-    $lab->calc();
-
+    
 }
 
 ?>

@@ -16,9 +16,19 @@ function getIngredientIdByName($name)
     return Db::selectFieldByField(TBL_INGREDIENTS, 'id', array('name' => $name));
 }
 
+function getEffect($id)
+{
+    return Db::selectRowByField(TBL_EFFECTS, array('id' => $id));
+}
+
 function getEffectIdByName($name)
 {
     return Db::selectFieldByField(TBL_EFFECTS, 'id', array('name' => $name));
+}
+
+function getEffectNameById($id)
+{
+    return Db::selectFieldByField(TBL_EFFECTS, 'name', array('id' => $id));
 }
 
 function getIngredientsByEffectId($effect_id)
