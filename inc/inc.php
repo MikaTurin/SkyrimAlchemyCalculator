@@ -1,7 +1,11 @@
 <?php
+$root = dirname(__DIR__);
+require $root . '/vendor/autoload.php';
+
 require_once('config.php');
-require_once('db.php');
+//require_once('db.php');
 require_once('lib.php');
+require_once($root . '/classes/Mod.php');
 require_once('class.myforms.form.php');
 require_once('class.myforms.controls.php');
 
@@ -62,6 +66,10 @@ function transform_array ($r, $key, $value)
     return $tmp;
 }
 
+/**
+ * @deprecated
+ * @param string $query
+ */
 function maketable($query)
 {
     static $style;
@@ -100,7 +108,7 @@ function maketable($query)
     }
 }
 
-function drawtable(array $r)
+function drawtable(array $r, $width = 0)
 {
     static $style;
 
@@ -113,7 +121,9 @@ function drawtable(array $r)
     $c = sizeof($r);
     if (!$c) return;
 
-    echo '<table border="0" cellspacing="0" cellpadding="3" class="vTable">';
+    $add = '';
+    if ($width) $add = ' style="width:'.$width.'"';
+    echo '<table border="0" cellspacing="0" cellpadding="3" class="vTable"'.$add.'>';
 
     echo '<tr>' ;
     foreach ($r[0] as $k => $v) {

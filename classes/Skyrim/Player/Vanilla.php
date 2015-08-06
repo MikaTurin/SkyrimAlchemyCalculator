@@ -46,6 +46,8 @@ class Vanilla extends Structure
      */
     protected $perkPoisoner = 0;
 
+    protected $perkPurity = 0;
+
 
     public static function make(array $r = null)
     {
@@ -146,6 +148,11 @@ class Vanilla extends Structure
         $this->perkPoisoner = $perkPoisoner;
 
         return $this;
+    }
+
+    public function getPerkPurity()
+    {
+        return $this->perkPurity;
     }
 
     /**

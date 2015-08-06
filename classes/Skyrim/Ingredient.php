@@ -43,16 +43,46 @@ class Ingredient
         return $this->effects;
     }
 
-    public static function makeFromId($id)
+    public static function makeFromId($id, $mod = null)
     {
-        Db::query("SELECT * FROM ingredients i LEFT JOIN ingredients_vanilla  v ON i.id=v.id WHERE i.id='{$id}'");
+        if (is_null($mod)) $mod = \Mod::getDefault();
+
+        $tbl1 = TBL_INGREDIENTS;
+        $tbl2 = TBL_INGREDIENTS_EFFECTS;
+
+        $q = "
+          SELECT
+            *
+          FROM
+            `{$tbl1}` i
+            LEFT JOIN `{$tbl2}` v ON i.id=v.id AND v.dlc='{$mod}'
+          WHERE
+            i.id='{$id}'
+        ";
+
+        Db::query($q);
 
         return new static(Db::fetchAll());
     }
 
-    public static function makeFromName($name)
+    public static function makeFromName($name, $mod)
     {
-        Db::query("SELECT * FROM ingredients i LEFT JOIN ingredients_vanilla  v ON i.id=v.id WHERE i.name='{$name}'");
+        if (is_null($mod)) $mod = \Mod::getDefault();
+
+        $tbl1 = TBL_INGREDIENTS;
+        $tbl2 = TBL_INGREDIENTS_EFFECTS;
+
+        $q = "
+          SELECT
+            *
+          FROM
+            `{$tbl1}` i
+            LEFT JOIN `{$tbl2}` v ON i.id=v.id
+          WHERE
+            i.name='{$name}'
+        ";
+
+        Db::query($q);
 
         return new static(Db::fetchAll());
     }

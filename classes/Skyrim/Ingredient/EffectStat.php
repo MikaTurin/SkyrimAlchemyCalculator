@@ -29,7 +29,7 @@ class EffectStat extends Structure
      */
     public function getBaseMagnitude()
     {
-        return $this->magnitude;
+        return $this->magnitude + 0;
     }
 
 

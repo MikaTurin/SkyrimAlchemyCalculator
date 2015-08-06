@@ -2,7 +2,7 @@
 define ('MYFORM_AND', 1);
 define ('MYFORM_OR', 0);
 
-class myform
+class Myform
 {
     var $name;    // name of the table
     var $action;  // url to the submit page
@@ -18,7 +18,7 @@ class myform
     var $tableWidth = '';
     var $wasProcess = false;
 
-    function myform($name = 'frm', $action = "")
+    function __construct($name = 'frm', $action = "")
     {
         $this->fields = array();
         $this->name = $name;
@@ -26,6 +26,11 @@ class myform
             $action = basename($_SERVER['PHP_SELF']);
         }
         $this->action = $action;
+    }
+
+    public static function make($name = 'frm', $action = "")
+    {
+        return new static($name, $action);
     }
 
     function destroy()
@@ -74,11 +79,45 @@ class myform
         return $this->fields[$name];
     }
 
+    public function addControl(myform_control $obj)
+    {
+        $this->fields[$obj->name] = $obj->setFormName($this->name);
+
+        return $this;
+    }
+
+    public function setMethod($method)
+    {
+        if (!in_array(strtoupper($method), array('GET', 'POST'))) die('incorrect method set');
+        $this->method = $method;
+
+        return $this;
+    }
+
+    public function setCellspacing($val)
+    {
+        $this->cellspacing = $val;
+
+        return $this;
+    }
+
     function set_label($key, $label)
     {
         if (isset ($this->fields[$key])) {
             $this->fields[$key]->label = $label;
         }
+    }
+
+    /**
+     * @param $name
+     * @return \myform_control
+     * @throws Exception
+     */
+    function getField($name)
+    {
+        if (!array_key_exists($name, $this->fields)) throw new \Exception('no such field: '.$name);
+
+        return $this->fields[$name];
     }
 
     function setLabel($key, $label)
@@ -176,7 +215,7 @@ class myform
                 $name = $field->label;
             }
             if (!$hide_labels) {
-                $label = '<td valign="top" class="' . $this->classname . '">' . $name . '</td>';
+                $label = '<td valign="top" class="' . $this->classname . '">' . $name . ' </td>';
             }
 
             $ret .=
@@ -195,6 +234,20 @@ class myform
             '</table>' . "\n" . $this->end() . "\n";
 
         return $ret;
+    }
+
+    public function html2()
+    {
+        $s = $this->form_begin();
+
+        array_walk($this->fields, function ($el) use (&$s) {
+           $s .= $el->html();
+        });
+        $s .= '<input type="button" value="submit" onclick="this.form.submit();">';
+
+        $s .= '</form><br>';
+
+        return $s;
     }
 
     function draw($border = 0)

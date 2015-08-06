@@ -47,4 +47,9 @@ class EffectsList
 
         return $this->data[$id];
     }
+
+    public function getAll()
+    {
+        return $this->data;
+    }
 }

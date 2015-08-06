@@ -25,9 +25,47 @@ class myform_control
         $this->key = $name;
     }
 
+    public static function make($form_name, $name, $value = null)
+    {
+        return new static($form_name, $name, $value);
+    }
+
+    public static function make2($name, $value = null)
+    {
+        return new static('', $name, $value);
+    }
+
     public function setValue($value)
     {
         $this->value = $value;
+        return $this;
+    }
+
+    public function setFormName($name)
+    {
+        $this->form_name = $name;
+
+        return $this;
+    }
+
+    public function setClassName($class)
+    {
+        $this->class = $class;
+
+        return $this;
+    }
+
+    public function setTagExtra($tagextra)
+    {
+        $this->tag_extra = $tagextra;
+
+        return $this;
+    }
+
+    public function setReadOnly()
+    {
+        $this->tag_extra .= ' readonly="readonly" ';
+
         return $this;
     }
 
@@ -498,12 +536,17 @@ class myform_combobox extends myform_control
         $this->optionsExtra = array();
     }
 
-    function loadArray($r, $empty_array = true)
+    /**
+     * @param array $r
+     * @param bool $emptyArray
+     * @return static
+     */
+    function loadArray($r, $emptyArray = true)
     {
         if (!is_array($r)) {
             return false;
         }
-        if ($empty_array) {
+        if ($emptyArray) {
             $this->values = $this->captions = array();
         }
         foreach ($r as $k => $v) {
@@ -536,8 +579,8 @@ class myform_combobox extends myform_control
         $cnt = sizeof($this->values);
         for ($i = 0; $i < $cnt; $i++) {
             $selected = $extra = '';
-            if ($this->value == $this->values[$i]) {
-                $selected = ' selected';
+            if ((string)$this->value == (string)$this->values[$i]) {
+                $selected = ' selected="selected"';
             }
             if (isset ($this->optionsExtra[$this->values[$i]])) {
                 $extra = ' ' . $this->optionsExtra[$this->values[$i]];

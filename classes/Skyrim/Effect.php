@@ -7,15 +7,24 @@ class Effect extends Structure
     protected $id;
     protected $editorId;
     protected $name;
+    protected $poison;
     protected $description;
     protected $amplify;
     protected $baseCost;
+    protected $dlc;
 
-    public static function makeFromId($id)
+    public function __construct(array $r = null)
     {
-        $r = Db::selectRowByField(TBL_EFFECTS, array('id' => $id));
+        parent::__construct($r);
+    }
 
-        return new static($r);
+    public static function makeFromId($id, $mod = null)
+    {
+        if (is_null($mod)) $mod = \Mod::getDefault();
+
+        $r = Db::selectRowByField('effects', array('id' => $id, 'dlc' => $mod));
+
+        return new static($r, $mod);
     }
 
     /**
@@ -74,6 +83,11 @@ class Effect extends Structure
     public function getName()
     {
         return $this->name;
+    }
+
+    public function getPoison()
+    {
+        return $this->poison;
     }
 
     public function createDescriptionText($magnitude = 0, $duration = 0)
