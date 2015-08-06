@@ -1,7 +1,7 @@
 <?php
 require('./inc/inc.php');
 
-use Sys\Db;
+use Msz\Db;
 $mod = 'RQ';
 
 $q = "

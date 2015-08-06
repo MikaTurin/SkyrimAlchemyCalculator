@@ -1,8 +1,10 @@
 <?php namespace Skyrim;
 
-use Skyrim\Player\Vanilla as Player;
 use Mod;
-use Myform;
+use Msz\Forms\Form;
+use Msz\Forms\Control\Select;
+use Msz\Forms\Control\Text;
+use Skyrim\Player\Vanilla as Player;
 
 require('./inc/inc.php');
 
@@ -17,23 +19,22 @@ array_walk(getIngredients(), function($el, $key, &$r) {
 $ingr = array_merge(array('' => '-'), $ingr);
 
 
-$frm = new Myform();
-$frm->cellspacing = 5;
-
-$frm->addControl(Mod::getSelectObject());
-
-$frm->add_control('textbox', 'skill', 'min')->setValue(15);
-$frm->add_control('textbox', 'fortify', 'min')->setValue(0);
-$frm->add_control('combobox', 'perkAlchemist')->loadArray(array_combine($perk, $perk));
-$frm->add_control('combobox', 'perkBenefactor')->loadArray(array(0 => 0, 25 => 25));
-$frm->add_control('combobox', 'perkPoisoner')->loadArray(array(0 => 0, 25 => 25));
-$frm->add_control('combobox', 'perkPurity')->loadArray(array(0 => 0, 1 => 1));
-$frm->add_control('combobox', 'effect')->loadArray(transform_array(getEffects($mod), 'id', 'name'));
-$frm->add_control('textbox', 'magnitude', 'min');
-$frm->add_control('textbox', 'duration', 'min');
-$frm->add_control('combobox', 'ingr1')->loadArray($ingr);
-$frm->add_control('combobox', 'ingr2')->loadArray($ingr);
-$frm->add_control('combobox', 'ingr3')->loadArray($ingr);
+$frm = Form::make('flt')
+    ->setCellspacing(5)
+    ->addControl(Mod::getSelectObject())
+    ->addControl(Text::make('skill')->setClass('min')->setValue(15))
+    ->addControl(Text::make('fortify')->setClass('min')->setValue(0))
+    ->addControl(Select::make('perkAlchemist')->loadArray(array_combine($perk, $perk)))
+    ->addControl(Select::make('perkBenefactor')->loadArray(array(0 => 0, 25 => 25)))
+    ->addControl(Select::make('perkPoisoner')->loadArray(array(0 => 0, 25 => 25)))
+    ->addControl(Select::make('perkPurity')->loadArray(array(0 => 0, 1 => 1)))
+    ->addControl(Select::make('effect')->loadArray(transform_array(getEffects($mod), 'id', 'name')))
+    ->addControl(Text::make('magnitude', 'min'))
+    ->addControl(Text::make('duration', 'min'))
+    ->addControl(Select::make('ingr1')->loadArray($ingr))
+    ->addControl(Select::make('ingr2')->loadArray($ingr))
+    ->addControl(Select::make('ingr3')->loadArray($ingr))
+;
 ?>
 <head>
     <link rel="stylesheet" type="text/css" href="assets/style.css">

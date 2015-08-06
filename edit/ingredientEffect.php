@@ -1,4 +1,10 @@
 <?php
+
+use Msz\Forms\Control\Hidden;
+use Msz\Forms\Control\Select;
+use Msz\Forms\Control\Text;
+use Msz\Forms\Form;
+
 require_once dirname(__DIR__) . '/inc/inc.php';
 
 $mod = Mod::get();
@@ -7,26 +13,26 @@ asort($effects);
 
 
 
-$frm = Myform::make('frm')
+$frm = Form::make('frm')
     ->setCellspacing(5)
-    ->addControl(myform_textbox::make2('id')->setClassName('min')->setReadOnly())
+    ->addControl(Text::make('id', 'min')->setReadOnly())
     ->addControl(Mod::getSelectObject())
-    ->addControl(myform_hidden::make2('oldEffectId1'))
-    ->addControl(myform_combobox::make2('effectId1')->loadArray($effects))
-    ->addControl(myform_textbox::make2('magnitude1')->setClassName('min'))
-    ->addControl(myform_textbox::make2('duration1')->setClassName('min'))
-    ->addControl(myform_hidden::make2('oldEffectId2'))
-    ->addControl(myform_combobox::make2('effectId2')->loadArray($effects))
-    ->addControl(myform_textbox::make2('magnitude2')->setClassName('min'))
-    ->addControl(myform_textbox::make2('duration2')->setClassName('min'))
-    ->addControl(myform_hidden::make2('oldEffectId3'))
-    ->addControl(myform_combobox::make2('effectId3')->loadArray($effects))
-    ->addControl(myform_textbox::make2('magnitude3')->setClassName('min'))
-    ->addControl(myform_textbox::make2('duration3')->setClassName('min'))
-    ->addControl(myform_hidden::make2('oldEffectId4'))
-    ->addControl(myform_combobox::make2('effectId4')->loadArray($effects))
-    ->addControl(myform_textbox::make2('magnitude4')->setClassName('min'))
-    ->addControl(myform_textbox::make2('duration4')->setClassName('min'))
+    ->addControl(Hidden::make('oldEffectId1'))
+    ->addControl(Select::make('effectId1')->loadArray($effects))
+    ->addControl(Text::make('magnitude1', 'min'))
+    ->addControl(Text::make('duration1', 'min'))
+    ->addControl(Hidden::make('oldEffectId2'))
+    ->addControl(Select::make('effectId2')->loadArray($effects))
+    ->addControl(Text::make('magnitude2', 'min'))
+    ->addControl(Text::make('duration2', 'min'))
+    ->addControl(Hidden::make('oldEffectId3'))
+    ->addControl(Select::make('effectId3')->loadArray($effects))
+    ->addControl(Text::make('magnitude3', 'min'))
+    ->addControl(Text::make('duration3', 'min'))
+    ->addControl(Hidden::make('oldEffectId4'))
+    ->addControl(Select::make('effectId4')->loadArray($effects))
+    ->addControl(Text::make('magnitude4', 'min'))
+    ->addControl(Text::make('duration4', 'min'))
 ;
 
 if (!$frm->process() && !empty($_REQUEST['id'])) {
@@ -68,7 +74,7 @@ elseif($frm->process()) {
                 AND effectId='{$r['oldEffectId'.$i]}'
         ";
 
-        \Sys\Db::query($q);
+        \Msz\Db::query($q);
     }
 
     header('Location: /skyrim/edit/' . basename(__FILE__) . '?id=' . $r['id'] . '&mod=' . $r['mod']);

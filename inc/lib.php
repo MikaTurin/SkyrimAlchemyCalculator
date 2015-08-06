@@ -1,5 +1,5 @@
 <?php
-use \Sys\Db;
+use \Msz\Db;
 
 function getIngredients($dlc = null)
 {

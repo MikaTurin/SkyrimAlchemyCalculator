@@ -1,14 +1,15 @@
 <?php
 require('./inc/inc.php');
 
-use Sys\Db;
+use Msz\Db;
+use Msz\Forms\Form;
 
 $mod = Mod::get();
 $tbl = TBL_EFFECTS;
 
 echo getIndexBlock();
 echo '<div align="center">';
-echo Myform::make('flt')->addControl(Mod::getSelectObject())->setMethod('GET')->html2();
+echo Form::make('flt')->addControl(Mod::getSelectObject())->setMethod('GET')->html2();
 
 
 $q = "

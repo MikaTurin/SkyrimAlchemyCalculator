@@ -3,14 +3,13 @@ $root = dirname(__DIR__);
 require $root . '/vendor/autoload.php';
 
 require_once('config.php');
-//require_once('db.php');
 require_once('lib.php');
 require_once($root . '/classes/Mod.php');
 require_once('class.myforms.form.php');
 require_once('class.myforms.controls.php');
 
-\Sys\Db::initialize(DBHOST, DBUSER, DBPASS, DBNAME);
-\Sys\Db::$save_history = 1;
+\Msz\Db::initialize(DBHOST, DBUSER, DBPASS, DBNAME);
+\Msz\Db::$save_history = 1;
 
 spl_autoload_register(function($class)
 {

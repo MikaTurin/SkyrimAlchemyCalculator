@@ -1,9 +1,9 @@
 <?php
-use \Sys\Db;
+use \Msz\Db;
+use \Msz\Forms\Form;
+use \Msz\Forms\Control\Select;
 
 require('./inc/inc.php');
-
-
 
 $id = request('id');
 
@@ -17,9 +17,9 @@ $ing = transform_array($ing, 'id', 'name');
 echo getIndexBlock();
 echo '<div align="center">';
 
-echo Myform::make('flt')
+echo Form::make('flt')
     ->setMethod('GET')
-    ->addControl(myform_combobox::make('flt', 'id')->loadArray($ing)->setValue($id))
+    ->addControl(Select::make('id')->loadArray($ing)->setValue($id))
     ->html2();
 
 $tbl1 = TBL_INGREDIENTS_EFFECTS;
@@ -69,6 +69,14 @@ echo '<br>';
 
 $r = array();
 foreach ($eids as $k => $v) {
+
+    if (!isset($v['VN']['magnitude'])) $v['VN']['magnitude'] = '';
+    if (!isset($v['RQ']['magnitude'])) $v['RQ']['magnitude'] = '';
+    if (!isset($v['PH']['magnitude'])) $v['PH']['magnitude'] = '';
+    if (!isset($v['VN']['duration'])) $v['VN']['duration'] = '';
+    if (!isset($v['RQ']['duration'])) $v['RQ']['duration'] = '';
+    if (!isset($v['PH']['duration'])) $v['PH']['duration'] = '';
+
     $r[] = array(
         'id' => isset($v['RQ']['id']) ? $v['RQ']['id'] : (isset($v['PH']['id']) ? $v['PH']['id'] : $v['VN']['id']),
         'eid' => $k,

@@ -1,5 +1,6 @@
 <?php
-use Sys\Db;
+use Msz\Db;
+use Msz\Forms\Form;
 
 require('inc/inc.php');
 $tbl = TBL_EFFECTS;
@@ -37,7 +38,7 @@ echo getIndexBlock();
 ?>
 <div style="width:1100px; margin:0 auto;" align="center">
 <?php
-echo Myform::make('flt')->addControl(Mod::getSelectObject())->setMethod('GET')->html2();
+echo Form::make('flt')->addControl(Mod::getSelectObject())->setMethod('GET')->html2();
 
 drawtable($r);
 ?>

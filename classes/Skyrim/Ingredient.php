@@ -1,7 +1,7 @@
-<?php
-namespace Skyrim;
-use \Sys\Db;
-use \Skyrim\Ingredient\EffectsList;
+<?php namespace Skyrim;
+
+use Msz\Db;
+use Skyrim\Ingredient\EffectsList;
 
 class Ingredient
 {

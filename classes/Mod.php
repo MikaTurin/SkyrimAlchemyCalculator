@@ -1,5 +1,6 @@
 <?php
-use \Sys\Db;
+use Msz\Db;
+use Msz\Forms\Control\Select;
 
 class Mod
 {
@@ -27,11 +28,11 @@ class Mod
     }
 
     /**
-     * @return myform_combobox
+     * @return Msz\Forms\Control\Base;
      */
     public static function getSelectObject()
     {
-        return myform_combobox::make('mmm', 'mod')->loadArray(static::getMods())->setValue(static::get());
+        return Select::make('mod')->loadArray(static::getMods())->setValue(static::get());
     }
 
     public static function getDefault()

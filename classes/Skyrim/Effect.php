@@ -1,6 +1,5 @@
-<?php
-namespace Skyrim;
-use \Sys\Db;
+<?php namespace Skyrim;
+use Msz\Db;
 
 class Effect extends Structure
 {

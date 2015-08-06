@@ -1,4 +1,7 @@
 <?php
+use \Msz\Forms\Form;
+use \Msz\Forms\Control\Select;
+
 require_once 'inc/inc.php';
 
 $editorid = '';
@@ -32,11 +35,11 @@ array_walk($r, function (&$el) use($mod) {
     unset($el['namedlc'], $el['dlc'], $el['vPrice'], $el['rPrice']);
 });
 
-$effects = myform_combobox::make('flt', 'id')
+$effects = Select::make('id')
     ->loadArray(transform_array($effects, 'id', 'name'))
     ->setValue($id);
 
-$flt = myform::make('flt')
+$flt = Form::make('flt')
     ->setMethod('GET')
     ->addControl($effects)
     ->addControl(Mod::getSelectObject());
