@@ -150,10 +150,17 @@ class Lab
                     $max = $stat->getBaseMagnitude();
                     $record = $stat;
                 }
+                elseif ($stat->getBaseMagnitude() == $max && $stat->getBaseDuration() > $record->getBaseDuration()) {
+                    $record = $stat;
+                }
+
             }
             else if ($effect->getAmplify() == 'duration') {
                 if ($stat->getBaseDuration() > $max) {
                     $max = $stat->getBaseDuration();
+                    $record = $stat;
+                }
+                elseif ($stat->getBaseDuration() == $max && $stat->getBaseMagnitude() > $record->getBaseMagnitude()) {
                     $record = $stat;
                 }
             }

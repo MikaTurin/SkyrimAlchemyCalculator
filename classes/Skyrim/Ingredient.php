@@ -1,5 +1,6 @@
 <?php namespace Skyrim;
 
+use Mod;
 use Msz\Db;
 use Skyrim\Ingredient\EffectsList;
 
@@ -45,7 +46,7 @@ class Ingredient
 
     public static function makeFromId($id, $mod = null)
     {
-        if (is_null($mod)) $mod = \Mod::getDefault();
+        if (is_null($mod)) $mod = Mod::getDefault();
 
         $tbl1 = TBL_INGREDIENTS;
         $tbl2 = TBL_INGREDIENTS_EFFECTS;
@@ -67,7 +68,7 @@ class Ingredient
 
     public static function makeFromName($name, $mod)
     {
-        if (is_null($mod)) $mod = \Mod::getDefault();
+        if (is_null($mod)) $mod = Mod::getDefault();
 
         $tbl1 = TBL_INGREDIENTS;
         $tbl2 = TBL_INGREDIENTS_EFFECTS;
@@ -77,7 +78,7 @@ class Ingredient
             *
           FROM
             `{$tbl1}` i
-            LEFT JOIN `{$tbl2}` v ON i.id=v.id
+            LEFT JOIN `{$tbl2}` v ON i.id=v.id AND v.dlc='{$mod}'
           WHERE
             i.name='{$name}'
         ";
