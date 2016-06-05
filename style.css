@@ -1,0 +1,5 @@
+.green { background-color:#CDEB8B; }
+.yellow { background-color:#FFFF88; }
+.red { background-color:#D15600; }
+.blue { background-color:#C3D9FF; }
+.box { width:105px; height:16px; border:1px solid #ccc; margin:2px 7px; display:inline-block; font-size:smaller;}

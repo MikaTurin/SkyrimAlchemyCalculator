@@ -1,0 +1,223 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>detailed phone leads</title>
+
+	<link type="text/css" rel="stylesheet" href="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/themes/redmond/jquery-ui.css" />
+	<link type="text/css" rel="stylesheet" href="../assets/table.css" />
+
+	<style>
+		body { font-size:11px; }
+		.txt10 { font-size:10px; }
+		.txt10 table.dataTable thead th { font-size:10px; }
+		.container { max-width: 1200px;  }
+		table.dataTable td { padding: .3em .4em; color:#496379; }
+		tfoot input { width:100%; padding:1px 2px; box-sizing:border-box; }
+	</style>
+
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.0/jquery.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.11.0/jquery-ui.min.js"></script>
+	<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1/i18n/jquery-ui-i18n.min.js"></script><!-- can be ommited, if language EN is used-->
+	<script src="http://cdn.datatables.net/1.10.2/js/jquery.dataTables.min.js"></script>
+
+</head>
+<body>
+
+<div class="container txt10">
+
+	from:&nbsp;<input type="text" value="2014-07-10" id="date_from">
+	till:&nbsp;<input type="text" value="2014-07-10" id="date_till">
+	dnis:&nbsp;<input type="text" value="" name="dnis" id="dnis" maxlength="3" style="width:40px">
+	<button id="button-search">Search</button>
+
+	<table>
+		<thead>
+		<tr>
+			<th>#</th>
+			<th>Lead DT</th>
+			<th>call DT</th>
+			<th>DNIS</th>
+			<th>Caller</th>
+			<th>Calls count</th>
+			<th>Disposition</th>
+			<th>status</th>
+			<th>Agent Duration</th>
+			<th>Queue Duration</th>
+			<th>profile id</th>
+			<th>created_dt</th>
+			<th>sale</th>
+			<th>salesman_id</th>
+			<th>call_id</th>
+			<th>queue</th>
+			<th>sub_id</th>
+			<th>action</th>
+		</tr>
+		</thead>
+		<tbody>
+		</tbody>
+		<tfoot>
+		<tr>
+			<th>#</th>
+			<th>Lead DT</th>
+			<th>call DT</th>
+			<th>DNIS</th>
+			<th>Caller</th>
+			<th>Calls count</th>
+			<th>Disposition</th>
+			<th>status</th>
+			<th>Agent Duration</th>
+			<th>Queue Duration</th>
+			<th>profile id</th>
+			<th>created_dt</th>
+			<th>sale</th>
+			<th>salesman_id</th>
+			<th>call_id</th>
+			<th>queue</th>
+			<th>sub_id</th>
+			<th>action</th>
+		</tr>
+		</tfoot>
+	</table>
+
+</div>
+
+
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		// Setup - add a text input to each footer cell
+		$('table tfoot th').each( function () {
+			var title = $('table thead th').eq( $(this).index() ).text();
+			$(this).html( '<input type="text" class="txt10" placeholder="'+title+'" />' );
+		} );
+
+		var oTable= $('table').DataTable({
+			pagingType   	: "full_numbers",
+			pageLength		: 15,
+			processing		: true,
+			ajax 			: '../data/detailed_phone_leads.php',
+			aLengthMenu		: [[15, 30, 10000], [15, 30, 'all']],
+			"fnServerParams"		: function(aoData){
+				aoData.push(
+						{
+							name		: 'date_from',
+							value		: $('#date_from').val()
+						},
+						{
+							name		: 'date_till',
+							value		: $('#date_till').val()
+						},
+						{
+							name        : 'dnis',
+							value       : $('#dnis').val()
+						}
+				);
+			},
+			"columns": [
+				{ "data": "#" },
+				{ "data": "dt" },
+				{ "data": "call_dt" },
+				{ "data": "dnis" },
+				{ "data": "caller" },
+				{ "data": "calls_count" },
+				{ "data": "disposition" },
+				{ "data": "status" },
+				{ "data": "agent_talk_duration" },
+				{ "data": "queue_hold_duration" },
+				{ "data": "profile_id" },
+				{ "data": "created_dt" },
+				{ "data": "sale" },
+				{ "data": "salesman_id" },
+				{ "data": "call_id" },
+				{ "data": "queue" },
+				{ "data": "sub_id" },
+				{ "data": "actions" }
+			]
+
+		});
+
+		oTable.order([[0, 'desc']]);
+
+		// Apply the filter
+		oTable.columns().eq( 0 ).each( function ( colIdx ) {
+			$( 'input', oTable.column( colIdx ).footer() ).on( 'keyup change', function () {
+				oTable
+						.column( colIdx )
+						.search( this.value )
+						.draw();
+			} );
+		});
+
+		$('#button-search').on('click', function(){
+			oTable.ajax.reload();
+		});
+
+
+
+		$('#dateFrom , #dateTo').datepicker(
+				$.extend(
+						{},
+						$.datepicker.regional['ru'],
+						{
+							dateFormat	: "yy-mm-dd",
+							minDate		: -1200,
+							maxDate		: 0,
+							changeMonth : true,
+							changeYear : true,
+							firstDay: 1,
+							onSelect	: function() {},
+							beforeShow	: function(input, a , b) {}
+						}
+				));
+
+
+		$('tbody').on( 'click', 'tr', function () {
+			console.log( oTable.row( this ).data() );
+//            if(oTable.row( this ).data().caller) {
+//                var d=oTable.row( this ).data();
+//                oTable.row.add($.get('../data/detailed_phone_leads.php', {'caller': d.caller, 'date_from': $("#date_from").val(), 'date_till': $("#date_till").val() })).draw();
+//            }
+		} );
+
+		$('a.ajax').live('click', function() {
+			var url = this.href;
+			// show a spinner or something via css
+			var dialog = $('<div style="display:none" class="loading"></div>').appendTo('body');
+			// open the dialog
+			dialog.dialog({
+				// add a close listener to prevent adding multiple divs to the document
+				close: function(event, ui) {
+					// remove div with all data and events
+					dialog.remove();
+				},
+				modal: true,
+				height: 'auto',
+				width: 'auto',
+				position:
+				{ my: "left top", at: "left bottom", of: event }
+			});
+			// load remote content
+			dialog.load(
+					url,
+					{}, // omit this param object to issue a GET request instead a POST request, otherwise you may provide post parameters within the object
+					function (responseText, textStatus, XMLHttpRequest) {
+						// remove the loading class
+						dialog.removeClass('loading');
+					}
+			);
+			//prevent the browser to follow the link
+			return false;
+		})
+
+	});
+
+
+	$(function (){
+
+	});
+</script>
+
+</body>
+</html>
