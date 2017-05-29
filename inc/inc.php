@@ -8,6 +8,7 @@ require_once($root . '/classes/Mod.php');
 require_once('class.myforms.form.php');
 require_once('class.myforms.controls.php');
 
+error_reporting(E_ALL);
 \Msz\Db::initialize(DBHOST, DBUSER, DBPASS, DBNAME);
 \Msz\Db::$save_history = 1;
 
@@ -113,7 +114,7 @@ function drawtable(array $r, $width = 0)
 
     if (is_null($style))
     {
-        echo '<style>.vTable {border-collapse:collapse; } .vTable td, .vTable th { font-size:10pt; border:1px solid #ccc; font-family: Tahoma, Arial, sans-serif;}</style>';
+        echo '<style>.vTable {border-collapse:collapse; } .vTable td, .vTable th { font-size:10pt; border:1px solid #ccc; font-family: Tahoma, Arial, sans-serif;} .vTable tr:hover { background: #CDEB8B; }</style>';
         $style = 1;
     }
 

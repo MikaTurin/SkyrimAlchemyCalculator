@@ -31,6 +31,7 @@ array_walk($r, function (&$el) use($mod) {
     if (Mod::isRequiem()) $el['price'] = $el['rPrice'];
     $el['magnitude'] = $el['magnitude'] + 0;
     $el['duration'] = $el['duration'] + 0;
+    $el['calc'] = '<a href="/skyrim/calc.php?ingr=' . $id .'&mod=' . $mod . '">calc</a>';
     $el['edit'] = '<a href="/skyrim/edit/ingredientEffect.php?id=' . $id .'&mod=' . $mod . '" target="_blank">edit</a>';
     unset($el['namedlc'], $el['dlc'], $el['vPrice'], $el['rPrice']);
 });

@@ -3,6 +3,8 @@ use Msz\Db;
 
 class Effect extends Structure
 {
+    protected $table = 'effects';
+
     protected $id;
     protected $editorId;
     protected $name;
@@ -10,7 +12,10 @@ class Effect extends Structure
     protected $description;
     protected $amplify;
     protected $baseCost;
+    protected $baseCostOld;
     protected $dlc;
+    protected $modded;
+    protected $ingestible;
 
     public function __construct(array $r = null)
     {

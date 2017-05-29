@@ -46,7 +46,8 @@ function getIngredientsByEffectId($effect_id, $dlc)
       v.effectId='{$effect_id}'
       AND v.dlc = '{$dlc}'
     ORDER BY
-      i.rarity
+      i.rarity,
+      i.name
     ";
 
     Db::query($q);

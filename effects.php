@@ -10,10 +10,10 @@ $q = "
 SELECT
   r.id,
   CONCAT('',r.editorId) AS editorId,
+  r.baseCost as {$mod}cost,  
   r.name,
-  r.description,
+  r.description,  
   v.baseCost AS PHcost,
-  r.baseCost as {$mod}cost,
   ROUND(r.baseCost/v.baseCost*100,2) AS dif
 FROM
   `{$tbl}` r
@@ -30,7 +30,8 @@ Db::query($q);
 $r = Db::fetchAll();
 
 array_walk($r, function (&$el) use ($mod) {
-    $el['id'] = '<a href="viewByEffect.php?id='.$el['id'].'&mod='.$mod.'">' . $el['id'] . '</a>';
+    $el['id'] = '<nobr><a href="viewByEffect.php?id='.$el['id'].'&mod='.$mod.'">V</a> '.$el['id'] . '</nobr>';
+    $el['description'] = htmlspecialchars($el['description']);
     $el['dif'] = $el['dif'] . '%';
 });
 

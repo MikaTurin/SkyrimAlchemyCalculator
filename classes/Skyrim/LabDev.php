@@ -1,6 +1,6 @@
 <?php namespace Skyrim;
 
-use Skyrim\Player\Vanilla as Player;
+use Skyrim\Player\PlayerVanilla as Player;
 
 class LabDev extends Lab
 {

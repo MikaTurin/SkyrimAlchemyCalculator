@@ -39,6 +39,9 @@ class Ingredient
         return $this->dlc;
     }
 
+    /**
+     * @return EffectsList
+     */
     public function getEffects()
     {
         return $this->effects;
@@ -62,6 +65,10 @@ class Ingredient
         ";
 
         Db::query($q);
+
+        if (!Db::numRows()) {
+            throw new \Exception("no such ingredient with id `{$id}`");
+        }
 
         return new static(Db::fetchAll());
     }

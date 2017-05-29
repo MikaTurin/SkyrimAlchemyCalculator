@@ -43,7 +43,9 @@ class EffectsList
      */
     public function get($id)
     {
-        if (!$this->exists($id)) throw new \ErrorException('cant find effect id:'.$id);
+        if (!$this->exists($id)) {
+            throw new \ErrorException('cant find effect id:'.$id);
+        }
 
         return $this->data[$id];
     }

@@ -16,11 +16,10 @@ class Result
         $this->cost = $cost;
     }
 
-    public function addEffect($id, $editorId, $description, $cost)
+    public function addEffect(Effect $effect, $description, $cost)
     {
         return $this->effects[] = array(
-            'id' => $id,
-            'editorId' => $editorId,
+            'effect' => $effect,
             'description' => $description,
             'cost' => $cost
         );

@@ -4,13 +4,12 @@ use Mod;
 use Msz\Forms\Form;
 use Msz\Forms\Control\Select;
 use Msz\Forms\Control\Text;
-use Skyrim\Player\Vanilla as Player;
+use Skyrim\Ingredient\CombineList;
+use Skyrim\Player\PlayerFactory;
 
 require('./inc/inc.php');
 
 $mod = Mod::get();
-$perk = array(0, 20, 40, 60, 80, 100);
-if (Mod::isRequiem()) $perk = array(0, 25, 50);
 
 $ingr = array();
 array_walk(getIngredients(), function($el, $key, &$r) {
@@ -24,7 +23,7 @@ $frm = Form::make('flt')
     ->addControl(Mod::getSelectObject())
     ->addControl(Text::make('skill')->setClass('min')->setValue(15))
     ->addControl(Text::make('fortify')->setClass('min')->setValue(0))
-    ->addControl(Select::make('perkAlchemist')->loadArray(array_combine($perk, $perk)))
+    ->addControl(Select::make('perkAlchemist')->loadArray(PlayerFactory::create($mod)->getPerks()))
     ->addControl(Select::make('perkBenefactor')->loadArray(array(0 => 0, 25 => 25)))
     ->addControl(Select::make('perkPoisoner')->loadArray(array(0 => 0, 25 => 25)))
     ->addControl(Select::make('perkPurity')->loadArray(array(0 => 0, 1 => 1)))
@@ -35,6 +34,9 @@ $frm = Form::make('flt')
     ->addControl(Select::make('ingr2')->loadArray($ingr))
     ->addControl(Select::make('ingr3')->loadArray($ingr))
 ;
+if (!$frm->isSubmited() && !empty($_REQUEST['ingr'])) {
+    $frm->getField('ingr1')->setValue($_REQUEST['ingr']);
+}
 ?>
 <head>
     <link rel="stylesheet" type="text/css" href="assets/style.css">
@@ -46,42 +48,55 @@ echo '<div style="width:400px; margin:0 auto;">' . $frm->html() . '</div>';
 
 if ($frm->isSubmited()) {
 
-    $player = Player::make($frm->getValues());
     echo '<div align="center">';
 
-    try {
-        if ($frm->getValue('magnitude') || $frm->getValue('duration')) {
+    $showmods = Mod::getMods();
+    //$showmods = array('RQ' => 'RQ');
+    foreach ($showmods as $calcmod => $modname) {
 
-            $lab = new LabDev($mod, $player, Effect::makeFromId($frm->getValue('effect'), $mod), $frm->getValue('magnitude'), $frm->getValue('duration'));
-            $res = $lab->calc();
-        }
-        else {
+        $player = PlayerFactory::create($calcmod, $frm->getValues());
 
-            $ingr = array();
-            for ($i = 1; $i <= 3; $i++) {
-                if (!$frm->getValue('ingr' . $i)) continue;
-                $ingr[] = Ingredient::makeFromId($frm->getValue('ingr' . $i), $mod);
+        echo '<b>' . $modname . '</b><br>';
+        try {
+            if ($frm->getValue('magnitude') || $frm->getValue('duration')) {
+
+                $lab = new LabDev($calcmod, $player, Effect::makeFromId($frm->getValue('effect'), $calcmod), $frm->getValue('magnitude'), $frm->getValue('duration'));
+                $res = $lab->calc();
             }
-            $lab = new Lab($mod, $player, $ingr);
-            $res = $lab->calc();
-        }
+            else {
 
-        if (sizeof($res->getEffects())) {
-            foreach ($res->getEffects() as $v) {
-                echo
-                    '<a href="viewByEffect.php?id='.$v['id'].'&mod='.$mod.'">'.$v['id'].'</a>: '.
-                    '['.$v['editorId'] . '] ' .
-                    $v['description'] .
-                    ' (' . $v['cost'] . ' Gold)<br>';
+                $list = new CombineList();
+                for ($i = 1; $i <= 3; $i++) {
+                    if (!$frm->getValue('ingr' . $i)) continue;
+                    $list->addId($frm->getValue('ingr' . $i), $calcmod);
+                }
+
+                $lab = new Lab($calcmod, $player, $list);
+                $res = $lab->calc();
             }
-            echo $res->getCost() . ' Gold';
+
+            if (sizeof($res->getEffects())) {
+
+
+                foreach ($res->getEffects() as $v) {
+                    /** @var Effect $eff */
+                    $eff = $v['effect'];
+                    echo
+                        '<a href="viewByEffect.php?id='.$eff->getId().'&mod='.$calcmod.'">'.$eff->getId().'</a>: '.
+                        '['.$eff->getEditorId() . '] ' .
+                        $v['description'] .
+                        ' (' . $v['cost'] . ' Gold) ('. ($eff->getBaseCost() + 0) . ')<br>';
+                }
+                echo $res->getCost() . ' Gold';
+            }
+            else {
+                echo 'no results';
+            }
         }
-        else {
-            echo 'no results';
+        catch (\Exception $e) {
+            echo $e->getMessage();
         }
-    }
-    catch (\Exception $e) {
-        echo $e->getMessage();
+        echo '<br><br>';
     }
     echo '</div>';
 }
