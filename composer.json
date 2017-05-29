@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Skyrim\\": "src/Skyrim/"
+            "Skyrim\\": "src/Skyrim/",
             "Tes5Edit\\": "src/Tes5Edit/"
         }
     }
