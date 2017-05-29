@@ -19,5 +19,11 @@
         "php": ">=5.3.0",
         "MikaTurin/Sys": "dev-master",
         "MikaTurin/Form": "dev-master"
+    },
+    "autoload": {
+        "psr-4": {
+            "Skyrim\\": "src/Skyrim/"
+            "Tes5Edit\\": "src/Tes5Edit/"
+        }
     }
 }

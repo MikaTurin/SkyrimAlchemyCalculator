@@ -4,9 +4,7 @@ require $root . '/vendor/autoload.php';
 
 require_once('config.php');
 require_once('lib.php');
-require_once($root . '/classes/Mod.php');
-require_once('class.myforms.form.php');
-require_once('class.myforms.controls.php');
+
 
 error_reporting(E_ALL);
 \Msz\Db::initialize(DBHOST, DBUSER, DBPASS, DBNAME);
@@ -14,6 +12,7 @@ error_reporting(E_ALL);
 
 spl_autoload_register(function($class)
 {
+    dump($class);
     $pos = strrpos($class, '\\');
     if ($pos === false) return;
 
