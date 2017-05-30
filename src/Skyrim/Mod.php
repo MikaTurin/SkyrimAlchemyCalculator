@@ -1,4 +1,5 @@
-<?php
+<?php namespace Skyrim;
+
 use Msz\Db;
 use Msz\Forms\Control\Select;
 
@@ -42,7 +43,7 @@ class Mod
     }
 
     /**
-     * @return Msz\Forms\Control\Base;
+     * @return Select;
      */
     public static function getSelectObject()
     {

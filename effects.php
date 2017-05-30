@@ -1,4 +1,5 @@
-<?php
+<?php namespace Skyrim;
+
 use Msz\Db;
 use Msz\Forms\Form;
 

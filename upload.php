@@ -8,7 +8,7 @@ require ('inc/inc.php');
 
 $frm = Form::make('upload')
     ->setMethodPost()
-    ->addControl(\Mod::getSelectObject()->setValue('RR'))
+    ->addControl(Mod::getSelectObject()->setValue('RR'))
     ->addControl(Select::make('dlc_fix')->loadArray(array(0 => 'no', 1 => 'yes')))
     ->addControl(Textarea::make('info')->setCols(150)->setRows(50));
 

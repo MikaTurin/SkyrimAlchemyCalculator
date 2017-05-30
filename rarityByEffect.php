@@ -1,8 +1,9 @@
-<?php
-require('./inc/inc.php');
+<?php namespace Skyrim;
 
 use Msz\Db;
 use Msz\Forms\Form;
+
+require('./inc/inc.php');
 
 $mod = Mod::get();
 $tbl = TBL_EFFECTS;
@@ -23,7 +24,7 @@ SELECT
   sum(if(i.rarity = 5, 1, 0)) AS rarity5,
   COUNT(i.id) AS total
 FROM
-  `effects` e
+  `{$tbl}` e
   LEFT JOIN `ingredients_effects` ie ON ie.effectid=e.id
   LEFT JOIN `ingredients` i ON ie.id=i.id
 WHERE

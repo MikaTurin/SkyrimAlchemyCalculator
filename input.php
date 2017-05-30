@@ -1,7 +1,10 @@
-<?php
-require('./inc/inc.php');
+<?php namespace Skyrim;
 
 use Msz\Db;
+
+die;
+require('./inc/inc.php');
+
 $mod = 'RQ';
 
 $q = "

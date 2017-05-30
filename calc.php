@@ -1,6 +1,6 @@
 <?php namespace Skyrim;
 
-use Mod;
+use Skyrim\Mod;
 use Msz\Forms\Form;
 use Msz\Forms\Control\Select;
 use Msz\Forms\Control\Text;

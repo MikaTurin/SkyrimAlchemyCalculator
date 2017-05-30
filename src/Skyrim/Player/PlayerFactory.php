@@ -1,5 +1,7 @@
 <?php namespace Skyrim\Player;
 
+use Skyrim\Mod;
+
 class PlayerFactory
 {
     /**
@@ -10,7 +12,7 @@ class PlayerFactory
      */
     public static function create($mod, array $data = null)
     {
-        $class = 'Skyrim\\Player\\' . \Mod::getPlayerClass($mod);
+        $class = 'Skyrim\\Player\\' . Mod::getPlayerClass($mod);
         return new $class($data);
     }
 }

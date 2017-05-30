@@ -10,30 +10,6 @@ error_reporting(E_ALL);
 \Msz\Db::initialize(DBHOST, DBUSER, DBPASS, DBNAME);
 \Msz\Db::$save_history = 1;
 
-spl_autoload_register(function($class)
-{
-    dump($class);
-    $pos = strrpos($class, '\\');
-    if ($pos === false) return;
-
-    $r = explode('\\', substr($class, 0, $pos));
-    //array_shift($r);
-
-    $name = substr($class, $pos + 1);
-
-    $path =
-        __DIR__ . DIRECTORY_SEPARATOR .
-        '..' . DIRECTORY_SEPARATOR .
-        'classes' . DIRECTORY_SEPARATOR .
-        (sizeof($r) ? implode(DIRECTORY_SEPARATOR, $r) . DIRECTORY_SEPARATOR : '').
-        $name . '.php';
-
-
-    if (file_exists($path))
-    {
-        require_once($path);
-    }
-});
 
 function dump($r)
 {

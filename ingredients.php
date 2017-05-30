@@ -1,7 +1,8 @@
-<?php
-use \Msz\Db;
-use \Msz\Forms\Form;
-use \Msz\Forms\Control\Select;
+<?php namespace Skyrim;
+
+use Msz\Db;
+use Msz\Forms\Form;
+use Msz\Forms\Control\Select;
 
 require('./inc/inc.php');
 
@@ -67,7 +68,7 @@ for ($i=0, $c=sizeof($r); $i<$c; $i++) {
 }
 $mods = array_unique($mods);
 sort($mods);
-$obj = \Skyrim\Ingredient::makeFromId($id, end($mods));
+$obj = Ingredient::makeFromId($id, end($mods));
 echo '<b>' . $obj->getName() .' ('. $obj->getId() . ')</b><br>';
 
 foreach ($mods as $mod) {

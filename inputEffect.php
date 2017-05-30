@@ -1,6 +1,8 @@
-<?php
+<?php namespace Skyrim;
+
 use Msz\Db;
 
+die;
 Db::query("SELECT v.id,v.editorId FROM effects_vanilla v LEFT JOIN effects_requiem r ON v.editorId=r.editorId WHERE r.editorId IS NULL ORDER BY editorId");
 $r = Db::fetchAll();
 if (Db::numRows()):
