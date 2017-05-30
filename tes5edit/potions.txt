@@ -1,0 +1,191 @@
+03273318;Healing Poultice;0.500000;35;AlchRestoreHealthBalm "Healing Poultice" [MGEF:03273319];50.000000;3600AlchRestoreHealthBalmSelf "Healing Poultice" [MGEF:03333FB9];50.000000;3600
+03273315;{LEGACY} Herbal Compress;0.250000;50;AlchRestoreHealth "Healing" [MGEF:0003EB15];0.100000;7200
+0010201E;The White Phial (Full);0.500000;232;AlchRestoreHealth "Healing" [MGEF:0003EB15];500.000000;0MS12WhitePhialEffect "<Error: No strings file for lstring ID 0000001B>" [MGEF:010009D6];0.000000;1
+0010201D;The White Phial (Full);0.500000;396;AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];100.000000;30AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A];100.000000;30AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];100.000000;30MS12WhitePhialEffect "<Error: No strings file for lstring ID 0000001B>" [MGEF:010009D6];0.000000;1
+0010201C;The White Phial (Full);0.500000;5885;AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8];500.000000;300MS12WhitePhialEffect "<Error: No strings file for lstring ID 0000001B>" [MGEF:010009D6];0.000000;1
+0010201B;The White Phial (Full);0.500000;4375;AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22];20.000000;3600MS12WhitePhialEffect "<Error: No strings file for lstring ID 0000001B>" [MGEF:010009D6];0.000000;1
+0010201A;The White Phial (Full);0.500000;5885;AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];500.000000;300MS12WhitePhialEffect "<Error: No strings file for lstring ID 0000001B>" [MGEF:010009D6];0.000000;1
+00102019;The White Phial (Full);0.500000;568;AlchResistMagic "Spellshield" [MGEF:00039E51];100.000000;60MS12WhitePhialEffect "<Error: No strings file for lstring ID 0000001B>" [MGEF:010009D6];0.000000;1
+000FFA02;Potion of Spiritedness (Remarkable);0.500000;668;AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];100.000000;300
+000FFA01;Potion of Stamina (Remarkable);0.500000;300;AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];100.000000;300
+000FFA00;Potion of Spellflux (Remarkable);0.500000;668;AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07];100.000000;300
+000FF9FF;Potion of Regeneration (Remarkable);0.500000;60;AlchFortifyHealRate "Regeneration" [MGEF:0003EB06];100.000000;300
+000FF9FE;Potion of Featherweight (Remarkable);0.500000;571;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];60.000000;600
+000FF9FD;Potion of Spellpower (Remarkable);0.500000;341;AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8];100.000000;300
+000FF9FC;Potion of Rigidity (Remarkable);0.500000;398;AlchFortifyHealth "Rigidity" [MGEF:0003EAF3];100.000000;300
+000F9642;Ice Wraith Essence;0.500000;96;AlchResistFrost "Icebane" [MGEF:0003EAEB];75.000000;15
+000F84C6;Potion of Plunder (Surpassing);0.500000;2029;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];70.000000;300AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];70.000000;300
+000F84C5;Potion of Plunder (Remarkable);0.500000;1713;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];60.000000;300AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];60.000000;300
+000F84C4;Potion of Plunder (Good);0.500000;1402;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];50.000000;300AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];50.000000;300
+000F84C3;Potion of Plunder (Fair);0.500000;1096;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];40.000000;300AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];40.000000;300
+000F84C2;Potion of Plunder (Faint);0.500000;799;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];30.000000;300AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];30.000000;300
+000F84C1;Potion of Plunder (Deficient);0.500000;511;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];20.000000;300AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];20.000000;300
+000F84C0;Potion of Keenshot (Surpassing);0.500000;221;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];40.000000;60AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];15.000000;60
+000F84BF;Potion of Keenshot (Remarkable);0.500000;191;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];35.000000;60AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];13.000000;60
+000F84BE;Potion of Keenshot (Good);0.500000;161;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];30.000000;60AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];11.000000;60
+000F84BD;Potion of Keenshot (Fair);0.500000;131;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];25.000000;60AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];9.000000;60
+000F84BC;Potion of Keenshot (Faint);0.500000;102;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];20.000000;60AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];7.000000;60
+000F84BB;Potion of Keenshot (Deficient);0.500000;74;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];15.000000;60AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];5.000000;60
+000F84BA;Potion of Conflict (Surpassing);0.500000;559;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];50.000000;60AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];55.000000;60
+000F84B9;Potion of Conflict (Remarkable);0.500000;443;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];40.000000;60AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];45.000000;60
+000F84B8;Potion of Conflict (Good);0.500000;330;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];30.000000;60AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];35.000000;60
+000F84B7;Potion of Conflict (Fair);0.500000;219;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];20.000000;60AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];25.000000;60
+000F84B6;Potion of Conflict (Faint);0.500000;166;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];15.000000;60AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];20.000000;60
+000F84B5;Potion of Conflict (Deficient);0.500000;115;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];10.000000;60AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];15.000000;60
+000F84B3;Potion of Escape (Surpassing);0.500000;840;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;60AlchRestoreHealth "Healing" [MGEF:0003EB15];150.000000;0
+000F84B2;Potion of Escape (Remarkable);0.500000;753;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;55AlchRestoreHealth "Healing" [MGEF:0003EB15];125.000000;0
+000F84B1;Potion of Escape (Good);0.500000;666;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;50AlchRestoreHealth "Healing" [MGEF:0003EB15];100.000000;0
+000F84B0;Potion of Escape (Fair);0.500000;580;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;45AlchRestoreHealth "Healing" [MGEF:0003EB15];75.000000;0
+000F84AF;Potion of Escape (Faint);0.500000;495;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;40AlchRestoreHealth "Healing" [MGEF:0003EB15];50.000000;0
+000F84AE;Potion of Escape (Deficient);0.500000;351;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;30AlchRestoreHealth "Healing" [MGEF:0003EB15];25.000000;0
+000F84AC;Potion of Larceny (Surpassing);0.500000;414;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];40.000000;60AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];40.000000;60
+000F84AB;Potion of Larceny (Remarkable);0.500000;358;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];35.000000;60AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];35.000000;60
+000F84AA;Potion of Larceny (Good);0.500000;302;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];30.000000;60AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];30.000000;60
+000F84A9;Potion of Larceny (Fair);0.500000;246;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];25.000000;60AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];25.000000;60
+000F84A8;Potion of Larceny (Faint);0.500000;192;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];20.000000;60AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];20.000000;60
+000F84A7;Potion of Larceny (Deficient);0.500000;140;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];15.000000;60AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];15.000000;60
+000D6980;Potion of Ably Persuading (Good);0.500000;132;AlchFortifyPersuasion "Ably Persuading" [MGEF:000D6947];50.000000;60
+000D697F;Potion of Ably Persuading (Fair);0.500000;103;AlchFortifyPersuasion "Ably Persuading" [MGEF:000D6947];40.000000;60
+000D6949;Potion of Ably Persuading (Faint);0.500000;75;AlchFortifyPersuasion "Ably Persuading" [MGEF:000D6947];30.000000;60
+000D6948;Potion of Ably Persuading (Deficient);0.500000;48;AlchFortifyPersuasion "Ably Persuading" [MGEF:000D6947];20.000000;60
+000AE723;Elixir of Vitality;0.500000;250;AlchCureDisease "Vitality" [MGEF:000AE722];100.000000;0
+000663E1;Potion of the Phantom;0.500000;50;AbGhostPotionEffect "Ghostveil" [MGEF:00103647];1.000000;30
+00065A64;Elixir of Poison Resistance;0.500000;300;AlchResistPoison "Poison Resistance" [MGEF:00090041];75.000000;300
+0003EB41;Potion of Invisibility (Good);0.500000;587;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;50
+0003EB40;Potion of Invisibility (Faint);0.500000;334;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;30
+0003EB3F;Potion of Invisibility (Fair);0.500000;459;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;40
+0003EB3E;Potion of Invisibility (Deficient);0.500000;214;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;20
+0003EB3A;Potion of Ably Restoring (Deficient);0.500000;48;AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28];20.000000;60
+0003EB39;Potion of Ably Deceiving (Deficient);0.500000;61;AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27];25.000000;60
+0003EB38;Potion of Ably Destroying (Deficient);0.500000;48;AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26];20.000000;60
+0003EB37;Potion of Ably Conjuring (Deficient);0.500000;61;AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25];25.000000;60
+0003EB36;Potion of Ably Transmuting (Deficient);0.500000;61;AlchFortifyAlteration "Fortify Alteration" [MGEF:0003EB24];25.000000;60
+0003EB35;Potion of Ably Haggling (Deficient);0.500000;84;AlchFortifyBarter "Fortify Barter" [MGEF:0003EB23];10.000000;30
+0003EB33;Potion of Ably Sneaking (Deficient);0.500000;45;AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22];10.000000;60
+0003EB32;Potion of Ably Defending (Deficient);0.500000;22;AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C];10.000000;60
+0003EB31;Potion of Ably Pickpocketing (Deficient);0.500000;96;AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];20.000000;60
+0003EB30;Potion of Stoneskin (Deficient);0.500000;22;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];25.000000;60
+0003EB2F;Potion of Stoneskin (Deficient);0.500000;22;AlchFortifyHeavyArmor "Stoneskin" [MGEF:0003EB1E];25.000000;60
+0003EB2E;Potion of Ably Blacksmithing (Deficient);0.500000;1;AlchFortifySmithing "Ably Smithing" [MGEF:0003EB1D];2.000000;30
+0003EB2C;Potion of Ably Aiming (Deficient);0.500000;96;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];20.000000;60
+0003EB2B;Potion of Ably Berserking (Deficient);0.500000;96;AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A];20.000000;60
+0003EB2A;Potion of Ably Fighting (Deficient);0.500000;96;AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];20.000000;60
+0003EB14;Potion of Spiritedness (Good);0.500000;522;AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];80.000000;300
+0003EB12;Potion of Spiritedness (Faint);0.500000;380;AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];60.000000;300
+0003EB11;Potion of Spiritedness (Deficient);0.500000;311;AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];50.000000;300
+0003EB10;Potion of Spellflux (Good);0.500000;522;AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07];80.000000;300
+0003EB0F;Potion of Spellflux (Fair);0.500000;451;AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07];70.000000;300
+0003EB0E;Potion of Spellflux (Faint);0.500000;380;AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07];60.000000;300
+0003EB0D;Potion of Spellflux (Deficient);0.500000;311;AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07];50.000000;300
+0003EB0C;Potion of Regeneration (Good);0.500000;50;AlchFortifyHealRate "Regeneration" [MGEF:0003EB06];80.000000;300
+0003EB0B;Potion of Regeneration (Fair);0.500000;40;AlchFortifyHealRate "Regeneration" [MGEF:0003EB06];70.000000;300
+0003EB0A;Potion of Regeneration (Faint);0.500000;30;AlchFortifyHealRate "Regeneration" [MGEF:0003EB06];60.000000;300
+0003EB09;Potion of Regeneration (Deficient);0.500000;20;AlchFortifyHealRate "Regeneration" [MGEF:0003EB06];50.000000;300
+0003EB05;Potion of Featherweight (Faint);0.500000;266;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];30.000000;600
+0003EB04;Potion of Featherweight (Good);0.500000;467;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];50.000000;600
+0003EB03;Potion of Featherweight (Fair);0.500000;365;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];40.000000;600
+0003EB02;Potion of Featherweight (Deficient);0.500000;170;AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01];20.000000;600
+0003EB00;Potion of Stamina (Faint);0.500000;100;AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];40.000000;120
+0003EAFF;Potion of Stamina (Good);0.500000;200;AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];80.000000;240
+0003EAFE;Potion of Stamina (Fair);0.500000;150;AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];60.000000;180
+0003EAFD;Potion of Stamina (Deficient);0.500000;29;AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];20.000000;60
+0003EAFC;Potion of Spellpower (Good);0.500000;266;AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8];80.000000;240
+0003EAFB;Potion of Spellpower (Fair);0.500000;194;AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8];60.000000;180
+0003EAFA;Potion of Spellpower (Faint);0.500000;124;AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8];40.000000;120
+0003EAF7;Potion of Spellpower (Deficient);0.500000;58;AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8];20.000000;60
+0003EAF6;Potion of Rigidity (Fair);0.500000;226;AlchFortifyHealth "Rigidity" [MGEF:0003EAF3];60.000000;180
+0003EAF5;Potion of Rigidity (Good);0.500000;311;AlchFortifyHealth "Rigidity" [MGEF:0003EAF3];80.000000;240
+0003EAF4;Potion of Rigidity (Faint);0.500000;145;AlchFortifyHealth "Rigidity" [MGEF:0003EAF3];40.000000;120
+0003EAF2;Potion of Rigidity (Deficient);0.500000;67;AlchFortifyHealth "Rigidity" [MGEF:0003EAF3];20.000000;60
+0003EAF1;Potion of Shockbane (Good);0.500000;265;AlchResistShock "Shockbane" [MGEF:0003EAEC];50.000000;300
+0003EAF0;Potion of Icebane (Good);0.500000;265;AlchResistFrost "Icebane" [MGEF:0003EAEB];50.000000;300
+0003EAEF;Potion of Flamebane (Good);0.500000;265;AlchResistFire "Flamebane" [MGEF:0003EAEA];50.000000;300
+0003EAEE;Potion of Shockbane (Faint);0.500000;151;AlchResistShock "Shockbane" [MGEF:0003EAEC];30.000000;120
+0003EAED;Potion of Icebane (Faint);0.500000;151;AlchResistFrost "Icebane" [MGEF:0003EAEB];30.000000;120
+0003EAE9;Potion of Flamebane (Faint);0.500000;151;AlchResistFire "Flamebane" [MGEF:0003EAEA];30.000000;120
+0003EAE8;Potion of Recuperation (Good);0.500000;75;AlchRestoreStamina "Stamina" [MGEF:0003EB16];10.000000;20
+0003EAE7;Potion of Recuperation (Fair);0.500000;50;AlchRestoreStamina "Stamina" [MGEF:0003EB16];8.000000;20
+0003EAE6;Potion of Recuperation (Remarkable);0.500000;85;AlchRestoreStamina "Stamina" [MGEF:0003EB16];12.000000;20
+0003EAE5;Potion of Recuperation (Deficient);0.500000;20;AlchRestoreStamina "Stamina" [MGEF:0003EB16];3.000000;20
+0003EAE4;Potion of Magicka (Good);0.500000;70;AlchRestoreMagicka "Magicka" [MGEF:0003EB17];10.000000;20
+0003EAE3;Potion of Healing (Good);0.500000;80;AlchRestoreHealth "Healing" [MGEF:0003EB15];10.000000;20
+0003EAE2;Potion of Magicka (Fair);0.500000;50;AlchRestoreMagicka "Magicka" [MGEF:0003EB17];8.000000;20
+0003EAE1;Potion of Magicka (Faint);0.500000;30;AlchRestoreMagicka "Magicka" [MGEF:0003EB17];5.000000;20
+0003EAE0;Potion of Magicka (Deficient);0.500000;15;AlchRestoreMagicka "Magicka" [MGEF:0003EB17];3.000000;20
+0003EADF;Potion of Healing (Fair);0.500000;60;AlchRestoreHealth "Healing" [MGEF:0003EB15];8.000000;20
+0003EADE;Potion of Healing (Faint);0.500000;40;AlchRestoreHealth "Healing" [MGEF:0003EB15];5.000000;20
+0003EADD;Potion of Healing (Deficient);0.500000;20;AlchRestoreHealth "Healing" [MGEF:0003EB15];3.000000;20
+0003AC31;Potion of Waterbreathing (Good);0.500000;215;AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D];0.000000;60
+0003AC30;Potion of Waterbreathing (Fair);0.500000;156;AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D];0.000000;45
+0003AC2F;Potion of Waterbreathing (Faint);0.500000;100;AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D];0.000000;30
+0003AC2E;Potion of Waterbreathing (Deficient);0.500000;46;AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D];0.000000;15
+00039E55;Potion of Spellshield (Good);0.500000;247;AlchResistMagic "Spellshield" [MGEF:00039E51];25.000000;300
+00039E54;Potion of Spellshield (Fair);0.500000;193;AlchResistMagic "Spellshield" [MGEF:00039E51];20.000000;180
+00039E53;Potion of Spellshield (Faint);0.500000;141;AlchResistMagic "Spellshield" [MGEF:00039E51];15.000000;120
+00039E52;Potion of Spellshield (Deficient);0.500000;45;AlchResistMagic "Spellshield" [MGEF:00039E51];10.000000;60
+00039D12;Potion of Ably Enchanting (Good);0.500000;25;AlchFortifyEnchanting "Ably Enchanting" [MGEF:0003EB29];5.000000;60
+00039D0A;Potion of Ably Enchanting (Fair);0.500000;19;AlchFortifyEnchanting "Ably Enchanting" [MGEF:0003EB29];4.000000;60
+00039D02;Potion of Ably Enchanting (Faint);0.500000;14;AlchFortifyEnchanting "Ably Enchanting" [MGEF:0003EB29];3.000000;60
+00039CFB;Potion of Ably Enchanting (Deficient);0.500000;9;AlchFortifyEnchanting "Ably Enchanting" [MGEF:0003EB29];2.000000;60
+00039CF3;Potion of Recuperation (Surpassing);0.500000;450;AlchRestoreStaminaAll "Restore Stamina" [MGEF:000FFA05];9999.000000;0
+00039BE8;Potion of Recuperation (Faint);0.500000;30;AlchRestoreStamina "Stamina" [MGEF:0003EB16];5.000000;20
+00039BE7;Potion of Magicka (Surpassing);0.500000;450;AlchRestoreMagickaAll "Restore Magicka" [MGEF:000FFA04];9999.000000;0
+00039BE6;Potion of Magicka (Remarkable);0.500000;85;AlchRestoreMagicka "Magicka" [MGEF:0003EB17];12.000000;20
+00039BE5;Potion of Healing (Surpassing);0.500000;500;AlchRestoreHealthAll "Restore Health" [MGEF:000FFA03];9999.000000;0
+00039BE4;Potion of Healing (Remarkable);0.500000;100;AlchRestoreHealth "Healing" [MGEF:0003EB15];12.000000;20
+00039BE3;Potion of Shockbane (Fair);0.500000;207;AlchResistShock "Shockbane" [MGEF:0003EAEC];40.000000;180
+00039BE1;Potion of Shockbane (Deficient);0.500000;96;AlchResistShock "Shockbane" [MGEF:0003EAEC];20.000000;60
+00039BDF;Potion of Icebane (Fair);0.500000;207;AlchResistFrost "Icebane" [MGEF:0003EAEB];40.000000;180
+00039B8A;Potion of Icebane (Deficient);0.500000;96;AlchResistFrost "Icebane" [MGEF:0003EAEB];20.000000;60
+00039B4B;Potion of Flamebane (Fair);0.500000;207;AlchResistFire "Flamebane" [MGEF:0003EAEA];40.000000;180
+00039B4A;Potion of Flamebane (Deficient);0.500000;96;AlchResistFire "Flamebane" [MGEF:0003EAEA];20.000000;60
+00039B0C;Potion of Spiritedness (Fair);0.500000;451;AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08];70.000000;300
+00039AA6;Potion of Ably Berserking (Good);0.500000;265;AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A];50.000000;60
+00039980;Potion of Ably Berserking (Fair);0.500000;207;AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A];40.000000;60
+00039974;Potion of Ably Berserking (Faint);0.500000;151;AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A];30.000000;60
+00039973;Potion of Ably Haggling (Good);0.500000;230;AlchFortifyBarter "Fortify Barter" [MGEF:0003EB23];25.000000;30
+00039971;Potion of Ably Haggling (Fair);0.500000;180;AlchFortifyBarter "Fortify Barter" [MGEF:0003EB23];20.000000;30
+00039970;Potion of Ably Haggling (Faint);0.500000;131;AlchFortifyBarter "Fortify Barter" [MGEF:0003EB23];15.000000;30
+0003996F;Potion of Ably Sneaking (Good);0.500000;123;AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22];25.000000;60
+00039969;Potion of Ably Sneaking (Fair);0.500000;96;AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22];20.000000;60
+00039968;Potion of Ably Sneaking (Faint);0.500000;70;AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22];15.000000;60
+00039967;Potion of Ably Blacksmithing (Good);0.500000;4;AlchFortifySmithing "Ably Smithing" [MGEF:0003EB1D];5.000000;30
+00039962;Potion of Ably Blacksmithing (Fair);0.500000;3;AlchFortifySmithing "Ably Smithing" [MGEF:0003EB1D];4.000000;30
+0003995D;Potion of Ably Blacksmithing (Faint);0.500000;2;AlchFortifySmithing "Ably Smithing" [MGEF:0003EB1D];3.000000;30
+0003995C;Potion of Ably Restoring (Good);0.500000;132;AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28];50.000000;60
+0003995B;Potion of Ably Restoring (Fair);0.500000;103;AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28];40.000000;60
+0003995A;Potion of Ably Restoring (Faint);0.500000;75;AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28];30.000000;60
+00039959;Potion of Ably Pickpocketing (Fair);0.500000;207;AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];40.000000;60
+00039958;Potion of Ably Pickpocketing (Good);0.500000;265;AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];50.000000;60
+00039957;Potion of Ably Pickpocketing (Faint);0.500000;151;AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20];30.000000;60
+00039956;Potion of Ably Fighting (Good);0.500000;265;AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];50.000000;60
+00039955;Potion of Ably Fighting (Fair);0.500000;207;AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];40.000000;60
+00039954;Potion of Ably Fighting (Faint);0.500000;151;AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19];30.000000;60
+00039951;Potion of Ably Deceiving (Good);0.500000;284;AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27];100.000000;60
+00039950;Potion of Ably Deceiving (Fair);0.500000;207;AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27];75.000000;60
+0003994F;Potion of Ably Deceiving (Faint);0.500000;132;AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27];50.000000;60
+0003994E;Potion of Ably Aiming (Good);0.500000;265;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];50.000000;60
+0003994B;Potion of Ably Aiming (Fair);0.500000;207;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];40.000000;60
+00039949;Potion of Ably Aiming (Faint);0.500000;151;AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B];30.000000;60
+00039948;Potion of Ably Lockpicking (Good);0.500000;123;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];50.000000;30
+00039946;Potion of Ably Lockpicking (Fair);0.500000;96;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];40.000000;30
+00039945;Potion of Ably Lockpicking (Faint);0.500000;70;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];30.000000;30
+00039930;Potion of Ably Lockpicking (Deficient);0.500000;45;AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21];20.000000;30
+00039904;Potion of Stoneskin (Good);0.500000;61;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];100.000000;60
+00039903;Potion of Stoneskin (Fair);0.500000;48;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];75.000000;60
+000398FD;Potion of Stoneskin (Faint);0.500000;35;AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F];50.000000;60
+000398F6;Potion of Stoneskin (Good);0.500000;61;AlchFortifyHeavyArmor "Stoneskin" [MGEF:0003EB1E];100.000000;60
+000398F5;Potion of Stoneskin (Fair);0.500000;48;AlchFortifyHeavyArmor "Stoneskin" [MGEF:0003EB1E];75.000000;60
+000398F4;Potion of Stoneskin (Faint);0.500000;35;AlchFortifyHeavyArmor "Stoneskin" [MGEF:0003EB1E];50.000000;60
+000398F3;Potion of Ably Destroying (Good);0.500000;132;AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26];50.000000;60
+000398F1;Potion of Ably Destroying (Fair);0.500000;103;AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26];40.000000;60
+000398EE;Potion of Ably Destroying (Faint);0.500000;75;AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26];30.000000;60
+000398ED;Potion of Ably Conjuring (Good);0.500000;284;AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25];100.000000;60
+000398EC;Potion of Ably Conjuring (Fair);0.500000;207;AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25];75.000000;60
+000398AD;Potion of Ably Conjuring (Faint);0.500000;132;AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25];50.000000;60
+000398AC;Potion of Ably Defending (Good);0.500000;61;AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C];25.000000;60
+000398AB;Potion of Ably Defending (Fair);0.500000;48;AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C];20.000000;60
+0003989B;Potion of Ably Defending (Faint);0.500000;35;AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C];15.000000;60
+0003989A;Potion of Ably Transmuting (Good);0.500000;284;AlchFortifyAlteration "Fortify Alteration" [MGEF:0003EB24];100.000000;60
+00039899;Potion of Ably Transmuting (Fair);0.500000;207;AlchFortifyAlteration "Fortify Alteration" [MGEF:0003EB24];75.000000;60
+0003988E;Potion of Ably Transmuting (Faint);0.500000;132;AlchFortifyAlteration "Fortify Alteration" [MGEF:0003EB24];50.000000;60
