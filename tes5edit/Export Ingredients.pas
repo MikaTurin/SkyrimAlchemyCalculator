@@ -30,11 +30,11 @@ begin
 	//AddMessage(GetElementEditValues(effect, 'EFIT\Duration'));
 	
 	sl.Add(
-		IntToHex(FixedFormID(e), 8) + '; ' +
-		GetElementEditValues(e, 'Full - Name') + '; ' +
-		GetElementEditValues(effect, 'EFID - Base Effect') + '; ' +
-		GetElementEditValues(effect, 'EFIT\Magnitude') + '; ' +
-		GetElementEditValues(effect, 'EFIT\Duration') + '; ' +
+		IntToHex(FixedFormID(e), 8) + ';' +
+		GetElementEditValues(e, 'Full - Name') + ';' +
+		GetElementEditValues(effect, 'EFID - Base Effect') + ';' +
+		GetElementEditValues(effect, 'EFIT\Magnitude') + ';' +
+		GetElementEditValues(effect, 'EFIT\Duration') + ';' +
 		GetElementEditValues(e, 'DATA\Value')
 	);
 	

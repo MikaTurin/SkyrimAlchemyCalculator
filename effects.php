@@ -15,7 +15,8 @@ SELECT
   r.name,
   r.description,  
   v.baseCost AS PHcost,
-  ROUND(r.baseCost/v.baseCost*100,2) AS dif
+  ROUND(r.baseCost/v.baseCost*100,2) AS dif,
+  r.modded
 FROM
   `{$tbl}` r
   INNER JOIN `{$tbl}` v ON r.editorId=v.editorId
@@ -34,6 +35,10 @@ array_walk($r, function (&$el) use ($mod) {
     $el['id'] = '<nobr><a href="viewByEffect.php?id='.$el['id'].'&mod='.$mod.'">V</a> '.$el['id'] . '</nobr>';
     $el['description'] = htmlspecialchars($el['description']);
     $el['dif'] = $el['dif'] . '%';
+    if ($el['modded'] == 1) {
+        $el['class'] = 'modded';
+    }
+    unset($el['modded']);
 });
 
 echo getIndexBlock();

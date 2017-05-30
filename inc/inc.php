@@ -89,7 +89,7 @@ function drawtable(array $r, $width = 0)
 
     if (is_null($style))
     {
-        echo '<style>.vTable {border-collapse:collapse; } .vTable td, .vTable th { font-size:10pt; border:1px solid #ccc; font-family: Tahoma, Arial, sans-serif;} .vTable tr:hover { background: #CDEB8B; }</style>';
+        echo '<style>.vTable {border-collapse:collapse; } .vTable td, .vTable th { font-size:10pt; border:1px solid #ccc; font-family: Tahoma, Arial, sans-serif;} .vTable tr:hover { background: #CDEB8B; } .modded {background-color: #FFFF88; }</style>';
         $style = 1;
     }
 
@@ -102,14 +102,20 @@ function drawtable(array $r, $width = 0)
 
     echo '<tr>' ;
     foreach ($r[0] as $k => $v) {
+        if ($k == 'class') continue;
         echo '<th>' . $k . '</th>' ;
     }
     echo '</tr>' ;
 
     for ($i=0; $i<$c; $i++) {
 
-        echo '<tr>';
+        $class = '';
+        if (!empty($r[$i]['class'])) {
+            $class = ' class="'.$r[$i]['class'].'"';
+        }
+        echo '<tr'.$class.'>';
         foreach ($r[$i] as $k => $v) {
+            if ($k == 'class') continue;
             echo '<td>' . $v . '</td>';
         };
         echo '</tr>';

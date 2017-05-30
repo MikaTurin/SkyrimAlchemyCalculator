@@ -1,6 +1,5 @@
 <?php namespace Skyrim;
 
-use Mod;
 use Msz\Db;
 use Skyrim\Ingredient\EffectsList;
 
@@ -62,6 +61,8 @@ class Ingredient
             LEFT JOIN `{$tbl2}` v ON i.id=v.id AND v.dlc='{$mod}'
           WHERE
             i.id='{$id}'
+          ORDER BY
+            v.idx
         ";
 
         Db::query($q);

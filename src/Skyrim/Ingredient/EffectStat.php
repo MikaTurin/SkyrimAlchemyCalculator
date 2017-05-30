@@ -4,7 +4,12 @@ use Skyrim\Structure;
 
 class EffectStat extends Structure
 {
+    protected $table = 'ingredients_effects';
+
     protected $id;
+    protected $effectId;
+    protected $dlc;
+    protected $idx;
     protected $magnitude;
     protected $duration;
 

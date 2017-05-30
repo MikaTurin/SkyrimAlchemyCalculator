@@ -1,0 +1,498 @@
+0304365E; Wolf Heart; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 3.000000; 1; 25
+0304365E; Wolf Heart; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 25
+0304365E; Wolf Heart; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 5.000000; 5; 25
+0304365E; Wolf Heart; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 2.000000; 20; 25
+0006BC0E; Wisp Wrappings; SoulTrapFFActorPoison "Soulreaping" [MGEF:0320B30F]; 0.000000; 4; 30
+0006BC0E; Wisp Wrappings; AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26]; 5.000000; 60; 30
+0006BC0E; Wisp Wrappings; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 4.000000; 300; 30
+0006BC0E; Wisp Wrappings; AlchResistMagic "Spellshield" [MGEF:00039E51]; 1.000000; 60; 30
+0004B0BA; Wheat; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 0.500000; 20; 1
+0004B0BA; Wheat; AlchFortifyHealth "Rigidity" [MGEF:0003EAF3]; 2.000000; 60; 1
+0004B0BA; Wheat; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 100.000000; 5; 1
+0004B0BA; Wheat; AlchDamageMagickaDuration "Spellfade" [MGEF:0010DE5F]; 1.000000; 10; 1
+0003AD60; Void Salts; AlchWeaknessShock "Electrolysis" [MGEF:00073F2F]; 20.000000; 30; 500
+0003AD60; Void Salts; AlchResistMagic "Spellshield" [MGEF:00039E51]; 3.000000; 300; 500
+0003AD60; Void Salts; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 10.000000; 1; 500
+0003AD60; Void Salts; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 8.000000; 300; 500
+0003AD76; Vampire Dust; DisDamageHealthVampireAlch "Sanguinare Vampiris" [MGEF:034F6D1D]; 175.000000; 3600; 250
+0003AD76; Vampire Dust; SoulTrapFFActorPoison "Soulreaping" [MGEF:0320B30F]; 0.000000; 10; 250
+0003AD76; Vampire Dust; AlchInvisibillity "Invisibility" [MGEF:0003EB3D]; 0.000000; 15; 250
+0003AD76; Vampire Dust; AlchCureDisease "Vitality" [MGEF:000AE722]; 5.000000; 0; 250
+0003F7F8; Tundra Cotton; AlchResistMagic "Spellshield" [MGEF:00039E51]; 1.000000; 60; 1
+0003F7F8; Tundra Cotton; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 3.000000; 60; 1
+0003F7F8; Tundra Cotton; AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C]; 3.000000; 60; 1
+0003F7F8; Tundra Cotton; AlchFortifyBarter "Fortify Barter" [MGEF:0003EB23]; 2.000000; 30; 1
+0003AD72; Troll Fat; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 4.000000; 60; 25
+0003AD72; Troll Fat; AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A]; 4.000000; 60; 25
+0003AD72; Troll Fat; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 2.000000; 20; 25
+0003AD72; Troll Fat; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 2.000000; 1; 25
+000134AA; Thistle Branch; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 3.000000; 60; 1
+000134AA; Thistle Branch; AlchDamageStaminaRavage "Enervation" [MGEF:00073F23]; 2.000000; 10; 1
+000134AA; Thistle Branch; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 3.000000; 0; 1
+000134AA; Thistle Branch; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 5.000000; 60; 1
+0003AD71; Taproot; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 2.000000; 30; 15
+0003AD71; Taproot; AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27]; 4.000000; 60; 15
+0003AD71; Taproot; AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07]; 5.000000; 300; 15
+0003AD71; Taproot; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 1.000000; 20; 15
+0007E8B7; Swamp Fungal Pod; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 3.000000; 60; 5
+0007E8B7; Swamp Fungal Pod; AlchDamageMagickaDuration "Spellfade" [MGEF:0010DE5F]; 1.000000; 10; 5
+0007E8B7; Swamp Fungal Pod; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 5.000000; 1; 5
+0007E8B7; Swamp Fungal Pod; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 1.000000; 20; 5
+00063B5F; Spriggan Sap; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 50
+00063B5F; Spriggan Sap; AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27]; 4.000000; 60; 50
+00063B5F; Spriggan Sap; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 4.000000; 60; 50
+00063B5F; Spriggan Sap; AlchFortifyAlteration "Fortify Alteration" [MGEF:0003EB24]; 4.000000; 60; 50
+00083E64; Grass Pod; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 4.000000; 60; 1
+00083E64; Grass Pod; AlchDamageMagickaRavage "Spellfreeze" [MGEF:00073F27]; 2.000000; 10; 1
+00083E64; Grass Pod; AlchFortifyAlteration "Fortify Alteration" [MGEF:0003EB24]; 4.000000; 60; 1
+00083E64; Grass Pod; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 1.000000; 20; 1
+03065314; Sabre Cat Eye; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.500000; 20; 2
+03065314; Sabre Cat Eye; AlchDamageHealthRavage "Ravage Health" [MGEF:00073F26]; 2.000000; 10; 2
+03065314; Sabre Cat Eye; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 2
+03065314; Sabre Cat Eye; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 1.000000; 20; 2
+0009151B; Spider Egg; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 5
+0009151B; Spider Egg; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 5
+0009151B; Spider Egg; AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21]; 2.000000; 30; 5
+0009151B; Spider Egg; AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B]; 4.000000; 60; 5
+0001B3BD; Snowberries; AlchResistFire "Flamebane" [MGEF:0003EAEA]; 2.000000; 60; 1
+0001B3BD; Snowberries; AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08]; 1.000000; 20; 1
+0001B3BD; Snowberries; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 2.000000; 60; 1
+0001B3BD; Snowberries; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 2.000000; 60; 1
+0003AD70; Slaughterfish Scales; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 3.000000; 60; 3
+0003AD70; Slaughterfish Scales; AlchDamageHealthDuration "Decay" [MGEF:0010AA4A]; 1.000000; 10; 3
+0003AD70; Slaughterfish Scales; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 7.000000; 60; 3
+0003AD70; Slaughterfish Scales; AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C]; 4.000000; 60; 3
+0007E8C5; Slaughterfish Egg; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 4.000000; 60; 3
+0007E8C5; Slaughterfish Egg; AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20]; 4.000000; 60; 3
+0007E8C5; Slaughterfish Egg; AlchDamageHealthDuration "Decay" [MGEF:0010AA4A]; 1.000000; 10; 3
+0007E8C5; Slaughterfish Egg; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 4.000000; 60; 3
+0003AD6F; Skeever Tail; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 100.000000; 5; 3
+0003AD6F; Skeever Tail; AlchDamageHealthRavage "Ravage Health" [MGEF:00073F26]; 2.000000; 10; 3
+0003AD6F; Skeever Tail; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 2.000000; 1; 3
+0003AD6F; Skeever Tail; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 5.000000; 60; 3
+0006F950; Scaly Pholiota; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 2.000000; 30; 4
+0006F950; Scaly Pholiota; AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27]; 4.000000; 60; 4
+0006F950; Scaly Pholiota; AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08]; 5.000000; 300; 4
+0006F950; Scaly Pholiota; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 4.000000; 300; 4
+00034CDF; Salt; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 1.000000; 30; 5
+00034CDF; Salt; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 4.000000; 60; 5
+00034CDF; Salt; AlchDamageSpeed "Tardiness" [MGEF:00073F25]; 50.000000; 5; 5
+00034CDF; Salt; AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07]; 5.000000; 300; 5
+0006BC04; Sabre Cat Tooth; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.000000; 20; 2
+0006BC04; Sabre Cat Tooth; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 4.000000; 60; 2
+0006BC04; Sabre Cat Tooth; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 4.000000; 30; 2
+0006BC04; Sabre Cat Tooth; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 2.000000; 30; 2
+03043665; Sabre Cat Heart; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 3.000000; 1; 35
+03043665; Sabre Cat Heart; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 35
+03043665; Sabre Cat Heart; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 5.000000; 5; 35
+03043665; Sabre Cat Heart; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 2.000000; 20; 35
+0006BC07; Sabre Cat Eye; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.500000; 20; 2
+0006BC07; Sabre Cat Eye; AlchDamageHealthRavage "Ravage Health" [MGEF:00073F26]; 2.000000; 10; 2
+0006BC07; Sabre Cat Eye; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 2
+0006BC07; Sabre Cat Eye; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 0.500000; 20; 2
+0006BC10; Powdered Mammoth Tusk; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 2.500000; 20; 25
+0006BC10; Powdered Mammoth Tusk; AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22]; 4.000000; 60; 25
+0006BC10; Powdered Mammoth Tusk; AlchWeaknessFire "Pyrolysis" [MGEF:00073F2D]; 3.000000; 30; 25
+0006BC10; Powdered Mammoth Tusk; AlchInfluenceConfDown "Fear" [MGEF:00073F20]; 2.000000; 30; 25
+00085500; Small Pearl; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.000000; 20; 35
+00085500; Small Pearl; AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19]; 4.000000; 60; 35
+00085500; Small Pearl; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 4.000000; 60; 35
+00085500; Small Pearl; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 3.000000; 60; 35
+000854FE; Pearl; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.500000; 20; 40
+000854FE; Pearl; AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C]; 4.000000; 60; 40
+000854FE; Pearl; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 1.500000; 20; 40
+000854FE; Pearl; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 3.000000; 60; 40
+0007EDF5; Nordic Barnacle; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 5
+0007EDF5; Nordic Barnacle; AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D]; 0.000000; 5; 5
+0007EDF5; Nordic Barnacle; AlchFortifyHealRate "Regeneration" [MGEF:0003EB06]; 5.000000; 300; 5
+0007EDF5; Nordic Barnacle; AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20]; 4.000000; 60; 5
+000B701A; Crimson Nirnroot; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 20.000000; 1; 250
+000B701A; Crimson Nirnroot; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 20.000000; 0; 250
+000B701A; Crimson Nirnroot; AlchInvisibillity "Invisibility" [MGEF:0003EB3D]; 0.000000; 24; 250
+000B701A; Crimson Nirnroot; AlchResistMagic "Spellshield" [MGEF:00039E51]; 5.000000; 180; 250
+00059B86; Nirnroot; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 15.000000; 0; 100
+00059B86; Nirnroot; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 15.000000; 0; 100
+00059B86; Nirnroot; AlchInvisibillity "Invisibility" [MGEF:0003EB3D]; 0.000000; 16; 100
+00059B86; Nirnroot; AlchResistMagic "Spellshield" [MGEF:00039E51]; 4.000000; 60; 100
+0002F44C; Nightshade; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 5.000000; 1; 8
+0002F44C; Nightshade; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 8
+0002F44C; Nightshade; AlchDamageStaminaDuration "Effeteness" [MGEF:0010DE5E]; 1.000000; 10; 8
+0002F44C; Nightshade; AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26]; 4.000000; 60; 8
+0004DA25; Blisterwort; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 10; 12
+0004DA25; Blisterwort; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 2.000000; 20; 12
+0004DA25; Blisterwort; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 1.500000; 10; 12
+0004DA25; Blisterwort; AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08]; 4.000000; 30; 12
+0004DA24; Namira's Rot; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 12
+0004DA24; Namira's Rot; AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21]; 2.000000; 30; 12
+0004DA24; Namira's Rot; AlchInfluenceConfDown "Fear" [MGEF:00073F20]; 2.000000; 30; 12
+0004DA24; Namira's Rot; AlchFortifyHealRate "Regeneration" [MGEF:0003EB06]; 5.000000; 300; 12
+0004DA23; Imp Stool; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 3.000000; 1; 12
+0004DA23; Imp Stool; AlchDamageHealthDuration "Decay" [MGEF:0010AA4A]; 1.000000; 10; 12
+0004DA23; Imp Stool; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 5.000000; 60; 12
+0004DA23; Imp Stool; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 0.500000; 20; 12
+0004DA22; White Cap; AlchWeaknessFrost "Cryolysis" [MGEF:00073F2E]; 3.000000; 30; 12
+0004DA22; White Cap; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 5.000000; 60; 12
+0004DA22; White Cap; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 0.500000; 20; 12
+0004DA22; White Cap; AlchDamageMagickaRavage "Spellfreeze" [MGEF:00073F27]; 2.000000; 10; 12
+0004DA20; Bleeding Crown; AlchWeaknessFire "Pyrolysis" [MGEF:00073F2D]; 3.000000; 30; 10
+0004DA20; Bleeding Crown; AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C]; 4.000000; 60; 10
+0004DA20; Bleeding Crown; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 2.000000; 30; 10
+0004DA20; Bleeding Crown; AlchResistMagic "Spellshield" [MGEF:00039E51]; 1.000000; 60; 10
+0004DA00; Fly Amanita; AlchResistFire "Flamebane" [MGEF:0003EAEA]; 3.000000; 60; 2
+0004DA00; Fly Amanita; AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A]; 4.000000; 60; 2
+0004DA00; Fly Amanita; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 2.000000; 20; 2
+0004DA00; Fly Amanita; AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08]; 5.000000; 300; 2
+0006BC00; Mudcrab Chitin; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 0.500000; 20; 7
+0006BC00; Mudcrab Chitin; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 5.000000; 60; 7
+0006BC00; Mudcrab Chitin; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 4.000000; 60; 7
+0006BC00; Mudcrab Chitin; AlchResistFire "Flamebane" [MGEF:0003EAEA]; 3.000000; 60; 7
+00074A19; Salt Pile; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 2.000000; 30; 1
+00074A19; Salt Pile; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 4.000000; 60; 1
+00074A19; Salt Pile; AlchDamageSpeed "Tardiness" [MGEF:00073F25]; 50.000000; 5; 1
+00074A19; Salt Pile; AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07]; 5.000000; 300; 1
+00077E1D; Red Mountain Flower; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 0.250000; 10; 1
+00077E1D; Red Mountain Flower; AlchDamageMagickaRavage "Spellfreeze" [MGEF:00073F27]; 1.000000; 10; 1
+00077E1D; Red Mountain Flower; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 2.000000; 60; 1
+00077E1D; Red Mountain Flower; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 1.000000; 1; 1
+00077E1E; Purple Mountain Flower; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 0.250000; 20; 1
+00077E1E; Purple Mountain Flower; AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22]; 2.000000; 60; 1
+00077E1E; Purple Mountain Flower; AlchDamageMagickaDuration "Spellfade" [MGEF:0010DE5F]; 1.000000; 5; 1
+00077E1E; Purple Mountain Flower; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 1.000000; 60; 1
+00077E1C; Blue Mountain Flower; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 0.250000; 10; 1
+00077E1C; Blue Mountain Flower; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 2.000000; 60; 1
+00077E1C; Blue Mountain Flower; AlchFortifyHealth "Rigidity" [MGEF:0003EAF3]; 2.000000; 60; 1
+00077E1C; Blue Mountain Flower; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 5.000000; 5; 1
+000727E0; Butterfly Wing; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 1.000000; 20; 3
+000727E0; Butterfly Wing; AlchFortifyBarter "Fortify Barter" [MGEF:0003EB23]; 2.000000; 30; 3
+000727E0; Butterfly Wing; AlchDamageStaminaDuration "Effeteness" [MGEF:0010DE5E]; 1.000000; 10; 3
+000727E0; Butterfly Wing; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 3
+000727DF; Luna Moth Wing; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 5
+000727DF; Luna Moth Wing; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 5.000000; 60; 5
+000727DF; Luna Moth Wing; AlchFortifyHealRate "Regeneration" [MGEF:0003EB06]; 5.000000; 300; 5
+000727DF; Luna Moth Wing; AlchInvisibillity "Invisibility" [MGEF:0003EB3D]; 0.000000; 4; 5
+000727DE; Blue Butterfly Wing; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 2
+000727DE; Blue Butterfly Wing; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 5.000000; 60; 2
+000727DE; Blue Butterfly Wing; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 2
+000727DE; Blue Butterfly Wing; AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27]; 3.000000; 60; 2
+000EC870; Mora Tapinella; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 1.000000; 20; 4
+000EC870; Mora Tapinella; AlchDamageHealthDuration "Decay" [MGEF:0010AA4A]; 1.000000; 10; 4
+000EC870; Mora Tapinella; AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08]; 5.000000; 300; 4
+000EC870; Mora Tapinella; AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27]; 4.000000; 60; 4
+000D8E3F; Moon Sugar; AlchWeaknessFire "Pyrolysis" [MGEF:00073F2D]; 3.000000; 30; 50
+000D8E3F; Moon Sugar; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 3.000000; 60; 50
+000D8E3F; Moon Sugar; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 2.500000; 20; 50
+000D8E3F; Moon Sugar; AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07]; 5.000000; 300; 50
+03043661; Mammoth Heart; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 3.000000; 600; 250
+03043661; Mammoth Heart; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 10.000000; 60; 250
+03043661; Mammoth Heart; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 5.000000; 300; 250
+03043661; Mammoth Heart; AlchFortifyHealth "Rigidity" [MGEF:0003EAF3]; 10.000000; 180; 250
+00045C28; Lavender; AlchResistMagic "Spellshield" [MGEF:00039E51]; 1.000000; 60; 5
+00045C28; Lavender; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 4.000000; 60; 5
+00045C28; Lavender; AlchDamageMagickaRavage "Spellfreeze" [MGEF:00073F27]; 2.000000; 10; 5
+00045C28; Lavender; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 4.000000; 60; 5
+0005076E; Juniper Berries; AlchWeaknessFire "Pyrolysis" [MGEF:00073F2D]; 3.000000; 30; 1
+0005076E; Juniper Berries; AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B]; 4.000000; 60; 1
+0005076E; Juniper Berries; AlchFortifyHealRate "Regeneration" [MGEF:0003EB06]; 5.000000; 300; 1
+0005076E; Juniper Berries; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 100.000000; 5; 1
+0006AC4A; Jazbay Grapes; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 1.000000; 30; 1
+0006AC4A; Jazbay Grapes; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 2.000000; 60; 1
+0006AC4A; Jazbay Grapes; AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07]; 2.000000; 300; 1
+0006AC4A; Jazbay Grapes; AlchDamageHealthRavage "Ravage Health" [MGEF:00073F26]; 1.000000; 10; 1
+0003AD6A; Ice Wraith Teeth; AlchWeaknessFrost "Cryolysis" [MGEF:00073F2E]; 3.000000; 30; 30
+0003AD6A; Ice Wraith Teeth; SoulTrapFFActorPoison "Soulreaping" [MGEF:0320B30F]; 0.000000; 2; 30
+0003AD6A; Ice Wraith Teeth; AlchInvisibillity "Invisibility" [MGEF:0003EB3D]; 0.000000; 4; 30
+0003AD6A; Ice Wraith Teeth; AlchWeaknessFire "Pyrolysis" [MGEF:00073F2D]; 3.000000; 30; 30
+000B18CD; Heart; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 5.000000; 1; 0
+000B18CD; Heart; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 5.000000; 0; 0
+000B18CD; Heart; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 0
+000B18CD; Heart; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 3.000000; 20; 0
+001016B3; Human Flesh; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 2.000000; 1; 1
+001016B3; Human Flesh; AlchParalysis "Paralysis" [MGEF:00073F30]; 0.000000; 1; 1
+001016B3; Human Flesh; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 1.000000; 20; 1
+001016B3; Human Flesh; AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22]; 4.000000; 60; 1
+03034E09; Horker Fat; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 4.000000; 180; 25
+03034E09; Horker Fat; AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A]; 4.000000; 60; 25
+03034E09; Horker Fat; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 1.000000; 20; 25
+03034E09; Horker Fat; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 2.000000; 1; 25
+000E7ED0; Hawk Feathers; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 7.000000; 60; 10
+000E7ED0; Hawk Feathers; AlchCureDisease "Vitality" [MGEF:000AE722]; 100.000000; 0; 10
+000E7ED0; Hawk Feathers; AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19]; 4.000000; 60; 10
+000E7ED0; Hawk Feathers; AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22]; 4.000000; 60; 10
+000E7EBC; Hawk Beak; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.500000; 20; 15
+000E7EBC; Hawk Beak; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 3.000000; 60; 15
+000E7EBC; Hawk Beak; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 4.000000; 300; 15
+000E7EBC; Hawk Beak; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 3.000000; 60; 15
+00057F91; Hanging Moss; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 1
+00057F91; Hanging Moss; AlchFortifyHealth "Rigidity" [MGEF:0003EAF3]; 4.000000; 60; 1
+00057F91; Hanging Moss; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 1
+00057F91; Hanging Moss; AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19]; 4.000000; 60; 1
+0003AD66; Hagraven Feathers; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 20
+0003AD66; Hagraven Feathers; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 5.000000; 60; 20
+0003AD66; Hagraven Feathers; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 3.000000; 20; 20
+0003AD66; Hagraven Feathers; AlchWeaknessShock "Electrolysis" [MGEF:00073F2F]; 3.000000; 30; 20
+0006B689; Hagraven Claw; AlchResistMagic "Spellshield" [MGEF:00039E51]; 1.000000; 120; 20
+0006B689; Hagraven Claw; AlchDamageMagickaDuration "Spellfade" [MGEF:0010DE5F]; 1.000000; 10; 20
+0006B689; Hagraven Claw; AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27]; 4.000000; 60; 20
+0006B689; Hagraven Claw; SoulTrapFFActorPoison "Soulreaping" [MGEF:0320B30F]; 0.000000; 4; 20
+0007EE01; Glowing Mushroom; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 3.000000; 60; 5
+0007EE01; Glowing Mushroom; AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26]; 5.000000; 60; 5
+0007EE01; Glowing Mushroom; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 4.000000; 30; 5
+0007EE01; Glowing Mushroom; AlchFortifyHealth "Rigidity" [MGEF:0003EAF3]; 4.000000; 60; 5
+0003AD73; Glow Dust; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 20
+0003AD73; Glow Dust; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 20
+0003AD73; Glow Dust; AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26]; 5.000000; 60; 20
+0003AD73; Glow Dust; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 3.000000; 60; 20
+0003AD64; Giant's Toe; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 20
+0003AD64; Giant's Toe; AlchFortifyHealth "Rigidity" [MGEF:0003EAF3]; 4.000000; 300; 20
+0003AD64; Giant's Toe; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 4.000000; 300; 20
+0003AD64; Giant's Toe; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 100.000000; 5; 20
+0007E8C1; Giant Lichen; AlchWeaknessShock "Electrolysis" [MGEF:00073F2F]; 3.000000; 30; 5
+0007E8C1; Giant Lichen; AlchDamageHealthRavage "Ravage Health" [MGEF:00073F26]; 2.000000; 10; 5
+0007E8C1; Giant Lichen; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 2.000000; 30; 5
+0007E8C1; Giant Lichen; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 0.500000; 20; 5
+00034D22; Garlic; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 2.000000; 300; 10
+00034D22; Garlic; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 1.000000; 60; 10
+00034D22; Garlic; AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07]; 5.000000; 60; 10
+00034D22; Garlic; AlchFortifyHealRate "Regeneration" [MGEF:0003EB06]; 5.000000; 60; 10
+0003AD5F; Frost Salts; AlchWeaknessFire "Pyrolysis" [MGEF:00073F2D]; 3.000000; 60; 400
+0003AD5F; Frost Salts; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 6.000000; 300; 400
+0003AD5F; Frost Salts; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 3.500000; 45; 400
+0003AD5F; Frost Salts; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 5.000000; 180; 400
+00034D32; Frost Mirriam; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 3.000000; 60; 1
+00034D32; Frost Mirriam; AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22]; 4.000000; 60; 1
+00034D32; Frost Mirriam; AlchDamageMagickaRavage "Spellfreeze" [MGEF:00073F27]; 2.000000; 10; 1
+00034D32; Frost Mirriam; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 100.000000; 5; 1
+0003AD5E; Fire Salts; AlchWeaknessFrost "Cryolysis" [MGEF:00073F2E]; 3.000000; 30; 250
+0003AD5E; Fire Salts; AlchResistFire "Flamebane" [MGEF:0003EAEA]; 3.000000; 300; 250
+0003AD5E; Fire Salts; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 2.500000; 45; 250
+0003AD5E; Fire Salts; AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07]; 5.000000; 300; 250
+0004DA73; Torchbug Thorax; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.000000; 20; 1
+0004DA73; Torchbug Thorax; AlchDamageMagickaDuration "Spellfade" [MGEF:0010DE5F]; 1.000000; 10; 1
+0004DA73; Torchbug Thorax; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 2.000000; 30; 1
+0004DA73; Torchbug Thorax; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 4.000000; 60; 1
+000705B7; Berit's Ashes; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 5
+000705B7; Berit's Ashes; AlchResistFire "Flamebane" [MGEF:0003EAEA]; 3.000000; 60; 5
+000705B7; Berit's Ashes; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 5.000000; 60; 5
+000705B7; Berit's Ashes; AlchDamageStaminaRavage "Enervation" [MGEF:00073F23]; 2.000000; 10; 5
+0003AD5D; Falmer Ear; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 3.000000; 1; 10
+0003AD5D; Falmer Ear; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 3.000000; 20; 10
+0003AD5D; Falmer Ear; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 5.000000; 60; 10
+0003AD5D; Falmer Ear; AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21]; 2.000000; 30; 10
+00034D31; Elves Ear; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 1.000000; 20; 10
+00034D31; Elves Ear; AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B]; 4.000000; 60; 10
+00034D31; Elves Ear; AlchWeaknessFrost "Cryolysis" [MGEF:00073F2E]; 2.000000; 30; 10
+00034D31; Elves Ear; AlchResistFire "Flamebane" [MGEF:0003EAEA]; 3.000000; 30; 10
+0003AD63; Ectoplasm; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 2.500000; 20; 25
+0003AD63; Ectoplasm; AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26]; 4.000000; 60; 25
+0003AD63; Ectoplasm; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 4.000000; 60; 25
+0003AD63; Ectoplasm; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 2.000000; 1; 25
+000F11C0; Dwarven Oil; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 2.000000; 30; 50
+000F11C0; Dwarven Oil; AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27]; 5.000000; 60; 50
+000F11C0; Dwarven Oil; AlchFortifyMagickaRate "Spellflux" [MGEF:0003EB07]; 5.000000; 300; 50
+000F11C0; Dwarven Oil; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 2.000000; 20; 50
+000889A2; Dragon's Tongue; AlchResistFire "Flamebane" [MGEF:0003EAEA]; 3.000000; 80; 5
+000889A2; Dragon's Tongue; AlchFortifyBarter "Fortify Barter" [MGEF:0003EB23]; 2.000000; 30; 5
+000889A2; Dragon's Tongue; AlchFortifyIllusion "Ably Deceiving" [MGEF:0003EB27]; 3.000000; 60; 5
+000889A2; Dragon's Tongue; AlchFortifyTwoHanded "Ably Berserking" [MGEF:0003EB1A]; 4.000000; 60; 5
+000BB956; Orange Dartwing; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.000000; 20; 1
+000BB956; Orange Dartwing; AlchDamageMagickaRavage "Spellfreeze" [MGEF:00073F27]; 2.000000; 10; 1
+000BB956; Orange Dartwing; AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20]; 4.000000; 60; 1
+000BB956; Orange Dartwing; AlchDamageHealthDuration "Decay" [MGEF:0010AA4A]; 1.000000; 10; 1
+000E4F0C; Blue Dartwing; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 3.000000; 60; 1
+000E4F0C; Blue Dartwing; AlchFortifyPickpocket "Ably Pickpocketing" [MGEF:0003EB20]; 4.000000; 60; 1
+000E4F0C; Blue Dartwing; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 0.500000; 20; 1
+000E4F0C; Blue Dartwing; AlchInfluenceConfDown "Fear" [MGEF:00073F20]; 2.000000; 30; 1
+02002A78; Yellow Mountain Flower; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 2.000000; 60; 1
+02002A78; Yellow Mountain Flower; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 2.000000; 60; 1
+02002A78; Yellow Mountain Flower; AlchFortifyHealth "Rigidity" [MGEF:0003EAF3]; 5.000000; 60; 1
+02002A78; Yellow Mountain Flower; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 50.000000; 5; 1
+020185FB; Poisonous Bloom; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 3.000000; 1; 5
+020185FB; Poisonous Bloom; AlchDamageSpeed "Tardiness" [MGEF:00073F25]; 50.000000; 5; 5
+020185FB; Poisonous Bloom; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 4.000000; 300; 5
+020185FB; Poisonous Bloom; AlchInfluenceConfDown "Fear" [MGEF:00073F20]; 2.000000; 30; 5
+020059BA; Ancestor Moth Wing; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 2
+020059BA; Ancestor Moth Wing; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 5.000000; 60; 2
+020059BA; Ancestor Moth Wing; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 2
+020059BA; Ancestor Moth Wing; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 1.000000; 30; 2
+0200B097; Gleamblossom; AlchResistMagic "Spellshield" [MGEF:00039E51]; 1.000000; 60; 5
+0200B097; Gleamblossom; AlchInfluenceConfDown "Fear" [MGEF:00073F20]; 2.000000; 30; 5
+0200B097; Gleamblossom; AlchFortifyHealRate "Regeneration" [MGEF:0003EB06]; 5.000000; 300; 5
+0200B097; Gleamblossom; AlchParalysis "Paralysis" [MGEF:00073F30]; 0.000000; 1; 5
+020183B7; Chaurus Hunter Antennae; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 2
+020183B7; Chaurus Hunter Antennae; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 5.000000; 60; 2
+020183B7; Chaurus Hunter Antennae; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 2
+020183B7; Chaurus Hunter Antennae; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 1.000000; 30; 2
+000516C8; Deathbell; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 3.000000; 5; 4
+000516C8; Deathbell; AlchDamageStaminaRavage "Enervation" [MGEF:00073F23]; 2.000000; 20; 4
+000516C8; Deathbell; AlchDamageSpeed "Tardiness" [MGEF:00073F25]; 50.000000; 5; 4
+000516C8; Deathbell; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 2.000000; 30; 4
+0001BCBC; Jarrin Root; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 200.000000; 1; 10
+0001BCBC; Jarrin Root; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 10
+0001BCBC; Jarrin Root; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 10
+0001BCBC; Jarrin Root; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 10
+0003AD5B; Daedra Heart; AlchDamageHealthDuration "Decay" [MGEF:0010AA4A]; 100.000000; 30; 1500
+0003AD5B; Daedra Heart; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 100.000000; 30; 1500
+0003AD5B; Daedra Heart; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 100.000000; 30; 1500
+0003AD5B; Daedra Heart; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 100.000000; 30; 1500
+00106E18; Histcarp; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 0.500000; 20; 6
+00106E18; Histcarp; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 4.000000; 60; 6
+00106E18; Histcarp; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 100.000000; 5; 6
+00106E18; Histcarp; AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D]; 0.000000; 5; 6
+00106E19; Cyrodilic Spadetail; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 15
+00106E19; Cyrodilic Spadetail; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 4.000000; 60; 15
+00106E19; Cyrodilic Spadetail; AlchInfluenceConfDown "Fear" [MGEF:00073F20]; 3.000000; 30; 15
+00106E19; Cyrodilic Spadetail; AlchDamageHealthRavage "Ravage Health" [MGEF:00073F26]; 2.000000; 10; 15
+00106E1A; River Betty; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 5.000000; 0; 15
+00106E1A; River Betty; AlchFortifyAlteration "Fortify Alteration" [MGEF:0003EB24]; 4.000000; 60; 15
+00106E1A; River Betty; AlchDamageSpeed "Tardiness" [MGEF:00073F25]; 50.000000; 5; 15
+00106E1A; River Betty; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 4.000000; 300; 15
+030972E6; Jon's Giant Abecean Longfin; AlchWeaknessFrost "Cryolysis" [MGEF:00073F2E]; 3.000000; 30; 500
+030972E6; Jon's Giant Abecean Longfin; AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22]; 4.000000; 60; 500
+030972E6; Jon's Giant Abecean Longfin; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 2.000000; 30; 500
+030972E6; Jon's Giant Abecean Longfin; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 4.000000; 60; 500
+00106E1B; Abecean Longfin; AlchWeaknessFrost "Cryolysis" [MGEF:00073F2E]; 3.000000; 30; 15
+00106E1B; Abecean Longfin; AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22]; 4.000000; 60; 15
+00106E1B; Abecean Longfin; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 2.000000; 30; 15
+00106E1B; Abecean Longfin; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 4.000000; 60; 15
+00106E1C; Silverside Perch; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.000000; 20; 15
+00106E1C; Silverside Perch; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 100.000000; 5; 15
+00106E1C; Silverside Perch; AlchDamageHealthRavage "Ravage Health" [MGEF:00073F26]; 2.000000; 10; 15
+00106E1C; Silverside Perch; AlchResistFrost "Icebane" [MGEF:0003EAEB]; 3.000000; 60; 15
+000A9195; Bee; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 0.500000; 20; 3
+000A9195; Bee; AlchDamageStaminaRavage "Enervation" [MGEF:00073F23]; 2.000000; 10; 3
+000A9195; Bee; AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08]; 5.000000; 300; 3
+000A9195; Bee; AlchWeaknessShock "Electrolysis" [MGEF:00073F2F]; 3.000000; 30; 3
+000B2183; Creep Cluster; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 1.000000; 20; 1
+000B2183; Creep Cluster; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 100.000000; 5; 1
+000B2183; Creep Cluster; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 4.000000; 300; 1
+000B2183; Creep Cluster; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 2.000000; 30; 1
+03043663; Claws; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.000000; 20; 2
+03043663; Claws; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 4.000000; 60; 2
+03043663; Claws; AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08]; 10.000000; 60; 2
+03043663; Claws; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 2
+0003AD56; Chaurus Eggs; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 4.000000; 30; 10
+0003AD56; Chaurus Eggs; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 4.000000; 60; 10
+0003AD56; Chaurus Eggs; AlchDamageMagicka "Spellbane" [MGEF:0003A2B6]; 3.000000; 0; 10
+0003AD56; Chaurus Eggs; AlchInvisibillity "Invisibility" [MGEF:0003EB3D]; 0.000000; 4; 10
+00052695; Charred Skeever Hide; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 0.500000; 20; 1
+00052695; Charred Skeever Hide; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 2.000000; 60; 1
+00052695; Charred Skeever Hide; AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D]; 0.000000; 20; 1
+00052695; Charred Skeever Hide; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 0.500000; 20; 1
+0006ABCB; Canis Root; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 15
+0006ABCB; Canis Root; AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19]; 4.000000; 60; 15
+0006ABCB; Canis Root; AlchFortifyMarksman "Ably Aiming" [MGEF:0003EB1B]; 4.000000; 60; 15
+0006ABCB; Canis Root; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 10.000000; 1; 15
+0003AD61; Briar Heart; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 2.000000; 30; 100
+0003AD61; Briar Heart; AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C]; 2.000000; 120; 100
+0003AD61; Briar Heart; AlchParalysis "Paralysis" [MGEF:00073F30]; 0.000000; 1; 100
+0003AD61; Briar Heart; AlchFortifyMagicka "Spellpower" [MGEF:0003EAF8]; 4.000000; 120; 100
+00034CDD; Bone Meal; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 5
+00034CDD; Bone Meal; AlchResistFire "Flamebane" [MGEF:0003EAEA]; 2.000000; 60; 5
+00034CDD; Bone Meal; AlchFortifyConjuration "Ably Conjuring" [MGEF:0003EB25]; 3.000000; 60; 5
+00034CDD; Bone Meal; AlchDamageStaminaRavage "Enervation" [MGEF:00073F23]; 2.000000; 10; 5
+00023D77; Chicken's Egg; AlchResistMagic "Spellshield" [MGEF:00039E51]; 1.000000; 60; 2
+00023D77; Chicken's Egg; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 2
+00023D77; Chicken's Egg; AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D]; 0.000000; 5; 2
+00023D77; Chicken's Egg; AlchDamageStaminaDuration "Effeteness" [MGEF:0010DE5E]; 1.000000; 10; 2
+00023D6F; Pine Thrush Egg; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.000000; 20; 2
+00023D6F; Pine Thrush Egg; AlchFortifyLockpicking "Ably Lockpicking" [MGEF:0003EB21]; 2.000000; 30; 2
+00023D6F; Pine Thrush Egg; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 2.000000; 30; 2
+00023D6F; Pine Thrush Egg; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 3.000000; 60; 2
+0007E8C8; Rock Warbler Egg; AlchRestoreHealth "Healing" [MGEF:0003EB15]; 0.500000; 20; 2
+0007E8C8; Rock Warbler Egg; AlchFortifyOneHanded "Ably Fighting" [MGEF:0003EB19]; 4.000000; 60; 2
+0007E8C8; Rock Warbler Egg; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 0; 2
+0007E8C8; Rock Warbler Egg; AlchWeaknessMagic "Arcane Disruption" [MGEF:00073F51]; 2.000000; 30; 2
+000B08C5; Honeycomb; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 2.000000; 20; 12
+000B08C5; Honeycomb; AlchFortifyBlock "Ably Blocking" [MGEF:0003EB1C]; 4.000000; 60; 12
+000B08C5; Honeycomb; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 4.000000; 60; 12
+000B08C5; Honeycomb; AlchDamageStaminaRavage "Enervation" [MGEF:00073F23]; 2.000000; 10; 12
+000A9191; Beehive Husk; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 2.000000; 60; 5
+000A9191; Beehive Husk; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 4.000000; 60; 5
+000A9191; Beehive Husk; AlchFortifySneak "Ably Sneaking" [MGEF:0003EB22]; 2.000000; 60; 5
+000A9191; Beehive Husk; AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26]; 5.000000; 60; 5
+0304365F; Bear Heart; AlchFortifyHealth "Rigidity" [MGEF:0003EAF3]; 5.000000; 300; 40
+0304365F; Bear Heart; AlchInfluenceAggUp "Frenzy" [MGEF:00073F29]; 2.000000; 20; 40
+0304365F; Bear Heart; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 5.000000; 5; 40
+0304365F; Bear Heart; AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26]; 1.000000; 60; 40
+0006BC02; Claws; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.000000; 20; 2
+0006BC02; Claws; AlchFortifyLightArmor "Stoneskin" [MGEF:0003EB1F]; 5.000000; 60; 2
+0006BC02; Claws; AlchFortifyStaminaRate "Spiritedness" [MGEF:0003EB08]; 10.000000; 60; 2
+0006BC02; Claws; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 2
+0006BC0B; Small Antlers; AlchWeaknessPoison "Toxicity" [MGEF:00090042]; 2.000000; 30; 15
+0006BC0B; Small Antlers; AlchFortifyRestoration "Ably Restoring" [MGEF:0003EB28]; 4.000000; 60; 15
+0006BC0B; Small Antlers; AlchDamageStaminaDuration "Effeteness" [MGEF:0010DE5E]; 1.000000; 10; 15
+0006BC0B; Small Antlers; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 2.000000; 1; 15
+0006BC0A; Large Antlers; AlchRestoreStamina "Stamina" [MGEF:0003EB16]; 1.500000; 20; 25
+0006BC0A; Large Antlers; AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9]; 5.000000; 120; 25
+0006BC0A; Large Antlers; AlchDamageSpeed "Tardiness" [MGEF:00073F25]; 50.000000; 5; 25
+0006BC0A; Large Antlers; AlchDamageStaminaRate "Damage Stamina Regen" [MGEF:00073F2C]; 50.000000; 5; 25
+0307524B; Strange Remains; AlchInvisibillity "Invisibility" [MGEF:0003EB3D]; 0.000000; 60; 850
+0307524B; Strange Remains; SoulTrapFFActorPoison "Soulreaping" [MGEF:0320B30F]; 0.000000; 10; 850
+0307524B; Strange Remains; AlchFortifyDestruction "Ably Destroying" [MGEF:0003EB26]; 5.000000; 60; 850
+0307524B; Strange Remains; AlchResistShock "Shockbane" [MGEF:0003EAEC]; 5.000000; 60; 850
+033AB3BC; Red Glitterdust; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 10.000000; 0; 50
+033AB3BC; Red Glitterdust; AlchFortifyCarryWeight "Featherweight" [MGEF:0003EB01]; 5.000000; 600; 50
+033AB3BC; Red Glitterdust; AlchRestoreMagicka "Magicka" [MGEF:0003EB17]; 1.500000; 20; 50
+033AB3BC; Red Glitterdust; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 60; 50
+0344C4A8; Venomous Spittle; AlchDamageHealthDuration "Decay" [MGEF:0010AA4A]; 1.000000; 60; 50
+0344C4A8; Venomous Spittle; AlchDamageHealth "Affliction" [MGEF:0003EB42]; 10.000000; 1; 50
+0344C4A8; Venomous Spittle; AlchDamageStaminaDuration "Effeteness" [MGEF:0010DE5E]; 1.000000; 60; 50
+0344C4A8; Venomous Spittle; AlchParalysis "Paralysis" [MGEF:00073F30]; 0.000000; 1; 50
+033AB3C5; Blue Glitterdust; AlchDamageStamina "Exhaustion" [MGEF:0003A2C6]; 3.000000; 60; 100
+033AB3C5; Blue Glitterdust; AlchCureDisease "Vitality" [MGEF:000AE722]; 1.000000; 0; 100
+033AB3C5; Blue Glitterdust; AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D]; 0.000000; 30; 100
+033AB3C5; Blue Glitterdust; AlchResistPoison "Poison Resistance" [MGEF:00090041]; 5.000000; 180; 100
+
+0100F1CC; Hawk's Egg; AlchResistMagic "Resist Magic" [MGEF:00039E51]; 1.000000; 60; 5
+0100F1CC; Hawk's Egg; AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B]; 100.000000; 5; 5
+0100F1CC; Hawk's Egg; AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D]; 0.000000; 5; 5
+0100F1CC; Hawk's Egg; AlchDamageStaminaDuration "Lingering Damage Stamina" [MGEF:0010DE5E]; 1.000000; 10; 5
+01003545; Salmon Roe; AlchRestoreStamina "Restore Stamina" [MGEF:0003EB16]; 2.000000; 0; 5
+01003545; Salmon Roe; AlchWaterbreathing "Waterbreathing" [MGEF:0003AC2D]; 0.000000; 60; 5
+01003545; Salmon Roe; AlchFortifyMagicka "Fortify Magicka" [MGEF:0003EAF8]; 50.000000; 5; 5
+01003545; Salmon Roe; AlchFortifyMagickaRate "Regenerate Magicka" [MGEF:0003EB07]; 5.000000; 300; 5
+
+0303CD8E;Перья фельсадской крачки;AlchRestoreHealth "Restore Health" [MGEF:0003EB15];1.000000;10;15
+0303CD8E;Перья фельсадской крачки;AlchFortifyLightArmor "Fortify Light Armor" [MGEF:0003EB1F];4.000000;60;15
+0303CD8E;Перья фельсадской крачки;AlchResistPoison "Resist Poison" [MGEF:00090041];5.000000;60;15
+0303CD8E;Перья фельсадской крачки;AlchResistMagic "Resist Magic" [MGEF:00039E51];1.000000;120;15
+0301FF75;Императорский зонтичный мох;AlchDamageHealth "Damage Health" [MGEF:0003EB42];3.000000;1;1
+0301FF75;Императорский зонтичный мох;AlchFortifyMagicka "Fortify Magicka" [MGEF:0003EAF8];2.000000;60;1
+0301FF75;Императорский зонтичный мох;AlchFortifyHealRate "Regenerate Health" [MGEF:0003EB06];5.000000;300;1
+0301FF75;Императорский зонтичный мох;AlchFortifyTwoHanded "Fortify Two-handed" [MGEF:0003EB1A];4.000000;60;1
+0301CD74;Пепельная ползучая лоза;AlchDamageStamina "Damage Stamina" [MGEF:0003A2C6];3.000000;0;20
+0301CD74;Пепельная ползучая лоза;AlchInvisibillity "Invisibility" [MGEF:0003EB3D];0.000000;4;20
+0301CD74;Пепельная ползучая лоза;AlchResistFire "Resist Fire" [MGEF:0003EAEA];2.000000;60;20
+0301CD74;Пепельная ползучая лоза;AlchFortifyDestruction "Fortify Destruction" [MGEF:0003EB26];5.000000;60;20
+0301CD72;Желе нетча;AlchDamageHealth "Damage Health" [MGEF:0003EB42];10.000000;1;20
+0301CD72;Желе нетча;AlchFortifyCarryWeight "Fortify Carry Weight" [MGEF:0003EB01];4.000000;300;20
+0301CD72;Желе нетча;AlchRestoreStamina "Restore Stamina" [MGEF:0003EB16];1.500000;20;20
+0301CD72;Желе нетча;AlchInfluenceConfDown "Fear" [MGEF:00073F20];2.000000;30;20
+0301CD71;Желе пепельного прыгуна;AlchRestoreHealth "Restore Health" [MGEF:0003EB15];0.500000;20;20
+0301CD71;Желе пепельного прыгуна;AlchFortifyLightArmor "Fortify Light Armor" [MGEF:0003EB1F];4.000000;60;20
+0301CD71;Желе пепельного прыгуна;AlchResistShock "Resist Shock" [MGEF:0003EAEC];3.000000;60;20
+0301CD71;Желе пепельного прыгуна;AlchWeaknessFrost "Weakness to Frost" [MGEF:00073F2E];3.000000;30;20
+0301CD6F;Кабаний клык;AlchFortifyStamina "Fortify Stamina" [MGEF:0003EAF9];1.000000;20;20
+0301CD6F;Кабаний клык;AlchFortifyHealth "Fortify Health" [MGEF:0003EAF3];1.000000;20;20
+0301CD6F;Кабаний клык;AlchFortifyBlock "Fortify Block" [MGEF:0003EB1C];1.000000;20;20
+0301CD6F;Кабаний клык;AlchInfluenceAggUp "Frenzy" [MGEF:00073F29];2.000000;20;20
+0301CD6E;Древесина горелого сприггана;AlchWeaknessFire "Weakness to Fire" [MGEF:00073F2D];3.000000;30;20
+0301CD6E;Древесина горелого сприггана;AlchFortifyAlteration "Fortify Alteration" [MGEF:0003EB24];4.000000;60;20
+0301CD6E;Древесина горелого сприггана;AlchDamageMagickaRate "Damage Magicka Regen" [MGEF:00073F2B];100.000000;5;20
+0301CD6E;Древесина горелого сприггана;AlchDamageSpeed "Slow" [MGEF:00073F25];50.000000;5;20
+0301CD6D;Пепел порождения;AlchDamageStaminaRavage "Ravage Stamina" [MGEF:00073F23];2.000000;10;20
+0301CD6D;Пепел порождения;AlchResistFire "Resist Fire" [MGEF:0003EAEA];2.000000;60;20
+0301CD6D;Пепел порождения;AlchFortifyIllusion "Fortify Illusion" [MGEF:0003EB27];3.000000;60;20
+0301CD6D;Пепел порождения;AlchDamageMagickaRavage "Ravage Magicka" [MGEF:00073F27];2.000000;10;20
+03017E97;Вредозобник;AlchDamageHealthRavage "Ravage Health" [MGEF:00073F26];2.000000;10;1
+03017E97;Вредозобник;AlchDamageStaminaRavage "Ravage Stamina" [MGEF:00073F23];2.000000;10;1
+03017E97;Вредозобник;AlchDamageMagickaRavage "Ravage Magicka" [MGEF:00073F27];2.000000;10;1
+03017E97;Вредозобник;AlchDamageHealthDuration "Lingering Damage Health" [MGEF:0010AA4A];1.000000;10;1
+03017008;Корень трамы;AlchWeaknessShock "Weakness to Shock" [MGEF:00073F2F];3.000000;30;1
+03017008;Корень трамы;AlchFortifyCarryWeight "Fortify Carry Weight" [MGEF:0003EB01];4.000000;300;1
+03017008;Корень трамы;AlchDamageMagicka "Damage Magicka" [MGEF:0003A2B6];3.000000;0;1
+03017008;Корень трамы;AlchDamageSpeed "Slow" [MGEF:00073F25];50.000000;5;1
+03016E26;Стручок пепельной травы;AlchResistFire "Resist Fire" [MGEF:0003EAEA];4.000000;80;1
+03016E26;Стручок пепельной травы;AlchWeaknessShock "Weakness to Shock" [MGEF:00073F2F];3.000000;30;1
+03016E26;Стручок пепельной травы;AlchFortifyLockpicking "Fortify Lockpicking" [MGEF:0003EB21];2.000000;30;1
+03016E26;Стручок пепельной травы;AlchFortifySneak "Fortify Sneak" [MGEF:0003EB22];2.000000;60;1

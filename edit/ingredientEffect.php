@@ -1,5 +1,6 @@
-<?php
+<?php namespace Skyrim;
 
+use Msz\Db;
 use Msz\Forms\Control\Hidden;
 use Msz\Forms\Control\Select;
 use Msz\Forms\Control\Text;
@@ -38,7 +39,7 @@ $frm = Form::make('frm')
 if (!$frm->process() && !empty($_REQUEST['id'])) {
 
     $id = $_REQUEST['id'];
-    $ingr = \Skyrim\Ingredient::makeFromId($id, $mod);
+    $ingr = Ingredient::makeFromId($id, $mod);
     $frm->getField('id')->setValue($id);
     $frm->getField('mod')->setValue($mod);
 
@@ -74,7 +75,7 @@ elseif($frm->process()) {
                 AND effectId='{$r['oldEffectId'.$i]}'
         ";
 
-        \Msz\Db::query($q);
+        Db::query($q);
     }
 
     header('Location: /skyrim/edit/' . basename(__FILE__) . '?id=' . $r['id'] . '&mod=' . $r['mod']);
