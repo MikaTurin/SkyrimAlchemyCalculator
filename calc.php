@@ -26,6 +26,7 @@ $frm = Form::make('flt')
     ->addControl(Select::make('perkAlchemist')->loadArray(PlayerFactory::create($mod)->getPerks()))
     ->addControl(Select::make('perkBenefactor')->loadArray(array(0 => 0, 25 => 25)))
     ->addControl(Select::make('perkPoisoner')->loadArray(array(0 => 0, 25 => 25)))
+    ->addControl(Select::make('perkPhysician')->loadArray(array(0 => 0, 25 => 25)))
     ->addControl(Select::make('perkPurity')->loadArray(array(0 => 0, 1 => 1)))
     ->addControl(Select::make('effect')->loadArray(transform_array(getEffects($mod), 'id', 'name')))
     ->addControl(Text::make('magnitude', 'min'))
@@ -39,7 +40,7 @@ if (!$frm->isSubmited() && !empty($_REQUEST['ingr'])) {
 }
 ?>
 <head>
-    <link rel="stylesheet" type="text/css" href="assets/style.css">
+    <link rel="stylesheet" type="text/css" href="style.css">
 </head>
 <?php
 echo getIndexBlock();

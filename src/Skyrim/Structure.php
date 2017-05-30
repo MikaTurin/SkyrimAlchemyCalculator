@@ -37,7 +37,6 @@ class Structure
             $q .= "`{$fld}`='{$val}',";
         }
         $q = 'INSERT INTO `' . $this->table . '` SET ' . substr($q, 0, -1);
-        dump($q);
         Db::query($q);
     }
 

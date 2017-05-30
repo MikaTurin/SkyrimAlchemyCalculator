@@ -13,6 +13,7 @@ class PlayerRequiem extends PlayerVanilla
     
     public function calcPowerFactor(Effect $effect)
     {
+        $this->perkPhysician = 0;
         $power = parent::calcPowerFactor($effect);
 
         if ($this->getPerkPurity()) {

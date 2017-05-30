@@ -22,6 +22,7 @@ FROM
   INNER JOIN `{$tbl}` v ON r.editorId=v.editorId
 WHERE
   r.dlc='{$mod}'
+  AND r.hidden=0
   AND v.dlc='PH'
 ORDER BY
   r.editorId

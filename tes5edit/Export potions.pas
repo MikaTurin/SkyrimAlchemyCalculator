@@ -51,16 +51,16 @@ begin
     IntToHex(FixedFormID(e), 8) + ';' +
 	GetElementEditValues(e, 'Full - Name') + ';' +
 	GetElementEditValues(e, 'DATA - Weight') + ';' +
-	GetElementEditValues(e, 'ENIT\Value') + ';';
+	GetElementEditValues(e, 'ENIT\Value');
   
   effects := ElementByName(e, 'Effects');
   for i := 0 to Pred(ElementCount(effects)) do begin
     effect := ElementByIndex(effects, i);
 	
-	s := s +
+	s := s + ';' +
 	  GetElementEditValues(effect, 'EFID - Base Effect') + ';' +
 	  GetElementEditValues(effect, 'EFIT\Magnitude') + ';' +
-	  GetElementEditValues(effect, 'EFIT\Duration');	  
+	  GetElementEditValues(effect, 'EFIT\Duration');
   end;
 
   //AddMessage(s);  

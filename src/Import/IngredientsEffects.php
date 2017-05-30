@@ -7,9 +7,8 @@ class IngredientsEffects extends Import
 {
     public function process($info)
     {
-        $info = trim($info);
-        $info = str_replace("\r", '', $info);
-        $r = explode("\n", $info);
+        $r = $this->getArrayFromText($info);
+
         $count = 0;
         $rez  = array();
 
@@ -25,6 +24,7 @@ class IngredientsEffects extends Import
             $obj->insert();
         }
 
+        return $c;
     }
 
     protected function parseString($s, &$count)
@@ -33,26 +33,25 @@ class IngredientsEffects extends Import
         if (empty($s)) {
             return null;
         }
+        
         $count ++;
         if ($count > 4) $count = 1;
 
         $r = explode(';', $s);
+        if (sizeof($r) != 6) {
+            throw new \Exception('cant parse string: '. $s);
+        }
 
         $a = array();
         $a['id'] = $this->fixDlcFormId(trim($r[0]));
-        $a['effectId'] = preg_replace('/^.*\[MGEF\:([A-Z0-9]{8})\]\s?$/iU', '$1', $r[2]);
+        $a['effectId'] = $this->getMgefId($r[2]);
         $a['dlc'] = $this->mod;
         $a['idx'] = $count;
         $a['magnitude'] = $r[3] + 0;
         $a['duration'] = $r[4] + 0;
 
-        try {
-            Effect::makeFromId($r['effectId'], $this->mod);
-        }
-        catch (\Exception $e) {
-            dump($e);
-        }
 
+        Effect::makeFromId($a['effectId'], $this->mod);
         return $a;
     }
 }

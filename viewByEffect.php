@@ -24,12 +24,16 @@ if (!empty($_REQUEST['id'])) {
     $cnt = sizeof($r);
 }
 
+if (!is_array($r)) {
+    $r = array();
+}
+
 array_walk($r, function (&$el) use($mod) {
     $id = $el['id'];
-    $el['id'] = '<a href="ingredients.php?id='.$el['id'].'">'.$el['id'].'</a>';
+    $el['id'] = '<a href="ingredient.php?id='.$el['id'].'">'.$el['id'].'</a>';
     if ($el['dlc'] != 'VN') $el['name'] = $el['name'] . ' (' . $el['dlc'] .')';
     $el['price'] = $el['vPrice'];
-    if (Mod::isRequiem()) $el['price'] = $el['rPrice'];
+    //if (Mod::isRequiem()) $el['price'] = $el['rPrice'];
     $el['magnitude'] = $el['magnitude'] + 0;
     $el['duration'] = $el['duration'] + 0;
     $el['calc'] = '<a href="/skyrim/calc.php?ingr=' . $id .'&mod=' . $mod . '">calc</a>';

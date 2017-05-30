@@ -68,10 +68,10 @@ function getEffects($dlc)
       COUNT(i.id) AS cnt
     FROM
       {$tbl1} e
-      LEFT JOIN {$tbl2} i ON e.id=i.effectId
+      LEFT JOIN {$tbl2} i ON e.id=i.effectId AND (i.dlc='{$dlc}' OR i.dlc is null)
     WHERE
       e.dlc='{$dlc}'
-      AND i.dlc='{$dlc}'
+      AND e.hidden=0      
     GROUP BY
       e.id
     ORDER BY

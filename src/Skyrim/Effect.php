@@ -1,4 +1,5 @@
 <?php namespace Skyrim;
+
 use Msz\Db;
 
 class Effect extends Structure
@@ -15,7 +16,7 @@ class Effect extends Structure
     protected $baseCostOld;
     protected $dlc;
     protected $modded;
-    protected $ingestible;
+    protected $hidden;
 
     public function __construct(array $r = null)
     {
@@ -24,9 +25,13 @@ class Effect extends Structure
 
     public static function makeFromId($id, $mod = null)
     {
-        if (is_null($mod)) $mod = \Mod::getDefault();
+        if (is_null($mod)) $mod = Mod::getDefault();
 
         $r = Db::selectRowByField('effects', array('id' => $id, 'dlc' => $mod));
+
+        if (!Db::numRows()) {
+            throw new \Exception("cant find effect by id {$id} & mod {$mod}");
+        }
 
         return new static($r, $mod);
     }

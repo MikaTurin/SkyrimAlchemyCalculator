@@ -1,6 +1,6 @@
 <?php namespace Skyrim;
 
-use Skyrim\Player\PlayerVanilla as Player;
+use Skyrim\Player\PlayerVanilla;
 
 class LabDev extends Lab
 {
@@ -9,7 +9,7 @@ class LabDev extends Lab
     protected $magnitude;
     protected $duration;
 
-    public function __construct($mod, Player $player, Effect $effect, $magnitude, $duration)
+    public function __construct($mod, PlayerVanilla $player, Effect $effect, $magnitude, $duration)
     {
         $this->mod = $mod;
         $this->player = $player;
@@ -21,7 +21,7 @@ class LabDev extends Lab
 
     public function calc()
     {
-        $power = $this->calcPowerFactor($this->effect);
+        $power = $this->player->calcPowerFactor($this->effect);
         $total = 0;
         $result = new Result();
 
@@ -37,8 +37,7 @@ class LabDev extends Lab
         $total += $cost;
 
         $result->addEffect(
-            $effect->getId(),
-            $effect->getEditorId(),
+            $effect,
             $effect->createDescriptionText($magnitude, $duration),
             floor($cost)
         );

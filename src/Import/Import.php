@@ -1,4 +1,4 @@
-<?php namespace Tes5Edit;
+<?php namespace Import;
 
 abstract class Import
 {
@@ -18,6 +18,19 @@ abstract class Import
         }
 
         return $id;
+    }
+
+    protected function getArrayFromText($s)
+    {
+        $info = trim($s);
+        $info = str_replace("\r", '', $info);
+        return explode("\n", $info);
+
+    }
+
+    protected function getMgefId($s)
+    {
+        return preg_replace('/^.*\[MGEF\:([A-Z0-9]{8})\]\s?$/iU', '$1', $s);
     }
 
 }
