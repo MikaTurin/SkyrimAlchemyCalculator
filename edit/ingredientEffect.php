@@ -54,8 +54,10 @@ if (!$frm->process() && !empty($_REQUEST['id'])) {
     }
 
     echo getIndexBlock();
+    echo '<div style="margin: 0 auto; width:260px;">';
     echo '<h2>'.$ingr->getName().'</h2>';
     echo $frm->html(0, false, true);
+    echo '</div></div>';
 }
 elseif($frm->process()) {
 

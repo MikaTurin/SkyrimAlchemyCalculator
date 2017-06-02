@@ -1,9 +1,6 @@
 <?php namespace Skyrim;
 
-use Skyrim\Mod;
-use Msz\Forms\Form;
-use Msz\Forms\Control\Select;
-use Msz\Forms\Control\Text;
+use Skyrim\Forms\Calculator;
 use Skyrim\Ingredient\CombineList;
 use Skyrim\Player\PlayerFactory;
 
@@ -11,30 +8,14 @@ require('./inc/inc.php');
 
 $mod = Mod::get();
 
-$ingr = array();
-array_walk(getIngredients(), function($el, $key, &$r) {
-    $r[0][$el['id']] = $el['name'].' ['.$el['id'].']';
-}, array(&$ingr));
-$ingr = array_merge(array('' => '-'), $ingr);
+$ingr = array('' => '-');
+array_walk(getIngredients(), function($el) use (&$ingr) {
+    $ingr[$el['id']] = $el['name'].' ['.$el['id'].']';
+});
 
+$frm = new Calculator('flt');
+$frm->createFields($mod, transform_array(getEffects($mod), 'id', 'name'), $ingr);
 
-$frm = Form::make('flt')
-    ->setCellspacing(5)
-    ->addControl(Mod::getSelectObject())
-    ->addControl(Text::make('skill')->setClass('min')->setValue(15))
-    ->addControl(Text::make('fortify')->setClass('min')->setValue(0))
-    ->addControl(Select::make('perkAlchemist')->loadArray(PlayerFactory::create($mod)->getPerks()))
-    ->addControl(Select::make('perkBenefactor')->loadArray(array(0 => 0, 25 => 25)))
-    ->addControl(Select::make('perkPoisoner')->loadArray(array(0 => 0, 25 => 25)))
-    ->addControl(Select::make('perkPhysician')->loadArray(array(0 => 0, 25 => 25)))
-    ->addControl(Select::make('perkPurity')->loadArray(array(0 => 0, 1 => 1)))
-    ->addControl(Select::make('effect')->loadArray(transform_array(getEffects($mod), 'id', 'name')))
-    ->addControl(Text::make('magnitude', 'min'))
-    ->addControl(Text::make('duration', 'min'))
-    ->addControl(Select::make('ingr1')->loadArray($ingr))
-    ->addControl(Select::make('ingr2')->loadArray($ingr))
-    ->addControl(Select::make('ingr3')->loadArray($ingr))
-;
 if (!$frm->isSubmited() && !empty($_REQUEST['ingr'])) {
     $frm->getField('ingr1')->setValue($_REQUEST['ingr']);
 }
@@ -45,6 +26,7 @@ if (!$frm->isSubmited() && !empty($_REQUEST['ingr'])) {
 <?php
 echo getIndexBlock();
 $frm->process();
+
 echo '<div style="width:400px; margin:0 auto;">' . $frm->html() . '</div>';
 
 if ($frm->isSubmited()) {
@@ -52,7 +34,6 @@ if ($frm->isSubmited()) {
     echo '<div align="center">';
 
     $showmods = Mod::getMods();
-    //$showmods = array('RQ' => 'RQ');
     foreach ($showmods as $calcmod => $modname) {
 
         $player = PlayerFactory::create($calcmod, $frm->getValues());

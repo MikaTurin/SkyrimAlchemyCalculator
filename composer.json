@@ -23,7 +23,8 @@
     "autoload": {
         "psr-4": {
             "Skyrim\\": "src/Skyrim/",
-            "Import\\": "src/Import/"
+            "Import\\": "src/Import/",
+            "Skyrim\\Forms\\": "src/Forms/"
         }
     }
 }
