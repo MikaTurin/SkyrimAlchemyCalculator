@@ -1,11 +1,11 @@
 <?php
 use \Msz\Db;
 
-function getIngredients($dlc = null)
+function getIngredients($dlc = null, $sort = 'name')
 {
     $fld = null;
     if ($dlc) $fld = array('dlc' => $dlc);
-    return Db::selectRowsByField(TBL_INGREDIENTS, $fld, 'name');
+    return Db::selectRowsByField(TBL_INGREDIENTS, $fld, $sort);
 }
 
 function getIngredientIdByName($name)

@@ -23,17 +23,34 @@ class Effect extends Structure
         parent::__construct($r);
     }
 
-    public static function makeFromId($id, $mod = null)
+    protected static function read($id, $mod)
     {
-        if (is_null($mod)) $mod = Mod::getDefault();
-
         $r = Db::selectRowByField('effects', array('id' => $id, 'dlc' => $mod));
 
         if (!Db::numRows()) {
             throw new \Exception("cant find effect by id {$id} & mod {$mod}");
         }
 
-        return new static($r, $mod);
+        return $r;
+    }
+
+    public static function makeFromId($id, $mod = null)
+    {
+        static $data;
+
+        if (is_null($mod)) $mod = Mod::getDefault();
+
+        if (!is_array($data)) {
+            $data = array();
+        }
+        if (!array_key_exists($mod, $data)) {
+            $data[$mod] = array();
+        }
+        if (!array_key_exists($id, $data[$mod])) {
+            $data[$mod][$id] = static::read($id, $mod);
+        }
+
+        return new static($data[$mod][$id]);
     }
 
     /**

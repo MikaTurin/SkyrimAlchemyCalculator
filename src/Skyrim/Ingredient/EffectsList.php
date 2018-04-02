@@ -9,18 +9,20 @@ class EffectsList
     public function __construct(array $r)
     {
         $this
-        ->add($r[0]['effectId'], $r[0]['magnitude'], $r[0]['duration'])
-        ->add($r[1]['effectId'], $r[1]['magnitude'], $r[1]['duration'])
-        ->add($r[2]['effectId'], $r[2]['magnitude'], $r[2]['duration'])
-        ->add($r[3]['effectId'], $r[3]['magnitude'], $r[3]['duration']);
+        ->add($r[0]['effectId'], $r[0]['magnitude'], $r[0]['duration'], $r[0]['dlc'], $r[0]['idx'])
+        ->add($r[1]['effectId'], $r[1]['magnitude'], $r[1]['duration'], $r[1]['dlc'], $r[1]['idx'])
+        ->add($r[2]['effectId'], $r[2]['magnitude'], $r[2]['duration'], $r[2]['dlc'], $r[2]['idx'])
+        ->add($r[3]['effectId'], $r[3]['magnitude'], $r[3]['duration'], $r[3]['dlc'], $r[3]['idx']);
     }
 
-    public function add($id, $magnitude, $duration)
+    public function add($id, $magnitude, $duration, $dlc, $idx)
     {
         $this->data[$id] = new EffectStat(array(
             'id' => $id,
             'magnitude' => $magnitude,
-            'duration' => $duration
+            'duration' => $duration,
+            'dlc' => $dlc,
+            'idx' => $idx
         ));
 
         return $this;
@@ -53,5 +55,10 @@ class EffectsList
     public function getAll()
     {
         return $this->data;
+    }
+
+    public function __destruct()
+    {
+        unset($this->data);
     }
 }

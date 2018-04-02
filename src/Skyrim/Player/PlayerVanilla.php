@@ -108,7 +108,8 @@ class PlayerVanilla extends Structure
     public function setPerkAlchemist($perkAlchemist)
     {
         $this->perkAlchemist = $perkAlchemist;
-
+        $this->setPerkValue();
+        
         return $this;
     }
 

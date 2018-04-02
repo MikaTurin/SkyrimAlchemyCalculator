@@ -1,5 +1,5 @@
-<?php
-namespace Skyrim\Ingredient;
+<?php namespace Skyrim\Ingredient;
+
 use Skyrim\Structure;
 
 class EffectStat extends Structure

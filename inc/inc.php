@@ -2,13 +2,15 @@
 $root = dirname(__DIR__);
 require $root . '/vendor/autoload.php';
 
+header('Content-Type: text/html; charset=utf-8');
+
 require_once('config.php');
 require_once('lib.php');
 
 
 error_reporting(E_ALL);
 \Msz\Db::initialize(DBHOST, DBUSER, DBPASS, DBNAME);
-\Msz\Db::$save_history = 1;
+//\Msz\Db::$save_history = 1;
 
 
 function dump($r)

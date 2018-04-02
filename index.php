@@ -7,6 +7,7 @@
     <a href="viewByEffect.php">Search Ingredients by Effect</a><br>
     <a href="rarityByEffect.php">Rarity by Effect List</a><br>
     <a href="import.php">Import</a><br>
+    <a href="best.php">Best</a><br>
     <!--<a href="input.php">Ingredients effect input</a><br>-->
 </div>
 </body>

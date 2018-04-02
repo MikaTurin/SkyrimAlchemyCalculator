@@ -30,7 +30,7 @@ $frm->process();
 echo '<div style="width:400px; margin:0 auto;">' . $frm->html() . '</div>';
 
 if ($frm->isSubmited()) {
-
+    
     echo '<div align="center">';
 
     $showmods = Mod::getMods();
@@ -48,6 +48,7 @@ if ($frm->isSubmited()) {
             else {
 
                 $list = new CombineList();
+
                 for ($i = 1; $i <= 3; $i++) {
                     if (!$frm->getValue('ingr' . $i)) continue;
                     $list->addId($frm->getValue('ingr' . $i), $calcmod);
@@ -57,7 +58,7 @@ if ($frm->isSubmited()) {
                 $res = $lab->calc();
             }
 
-            if (sizeof($res->getEffects())) {
+            if (is_object($res) && sizeof($res->getEffects())) {
 
 
                 foreach ($res->getEffects() as $v) {

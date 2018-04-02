@@ -46,4 +46,12 @@ class Structure
         unset($r['table']);
         return $r;
     }
+
+    public function __destruct()
+    {
+        $r = get_object_vars($this);
+        foreach ($r as $k => $v) {
+            unset($r[$k]);
+        }
+    }
 }

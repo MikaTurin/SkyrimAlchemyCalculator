@@ -25,6 +25,15 @@ class CombineList
         return sizeof($this->list);
     }
 
+    public function getNames()
+    {
+        $rez = array();
+        foreach ($this->list as $ingredient) {
+            $rez[] = $ingredient->getName();
+        }
+        return $rez;
+    }
+
     public function isCountCorrect()
     {
         return in_array($this->count(), array(2, 3));

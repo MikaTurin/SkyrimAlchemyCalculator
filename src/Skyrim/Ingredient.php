@@ -7,6 +7,7 @@ class Ingredient
 {
     protected $id;
     protected $name;
+    protected $nameru;
     protected $dlc;
 
     /** @var EffectsList */
@@ -18,6 +19,7 @@ class Ingredient
 
         $this->id = $r[0]['id'];
         $this->name = $r[0]['name'];
+        $this->nameru = $r[0]['nameru'];
         $this->dlc = $r[0]['dlc'];
 
         $this->effects = new EffectsList($r);
@@ -30,7 +32,7 @@ class Ingredient
 
     public function getName()
     {
-        return $this->name;
+        return $this->nameru;
     }
 
     public function getDlc()
@@ -46,10 +48,8 @@ class Ingredient
         return $this->effects;
     }
 
-    public static function makeFromId($id, $mod = null)
+    protected static function read($id, $mod)
     {
-        if (is_null($mod)) $mod = Mod::getDefault();
-
         $tbl1 = TBL_INGREDIENTS;
         $tbl2 = TBL_INGREDIENTS_EFFECTS;
 
@@ -71,7 +71,28 @@ class Ingredient
             throw new \Exception("no such ingredient with id `{$id}`");
         }
 
-        return new static(Db::fetchAll());
+        $r = Db::fetchAll();
+        Db::freeResult();
+        return $r;
+    }
+
+    public static function makeFromId($id, $mod = null)
+    {
+        static $data;
+
+        if (is_null($mod)) $mod = Mod::getDefault();
+
+        if (!is_array($data)) {
+            $data = array();
+        }
+        if (!array_key_exists($mod, $data)) {
+            $data[$mod] = array();
+        }
+        if (!array_key_exists($id, $data[$mod])) {
+            $data[$mod][$id] = static::read($id, $mod);
+        }
+
+        return new static($data[$mod][$id]);
     }
 
     public static function makeFromName($name, $mod)

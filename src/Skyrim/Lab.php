@@ -37,8 +37,13 @@ class Lab
     public function calc()
     {
         $this->commonEffects = $this->ingredients->getCommonEffects();
+
+        if (!sizeof($this->commonEffects)) {
+            return null;
+        }
         $total = 0;
         $result = new Result();
+        $result->setIngredients($this->ingredients);
 
         for ($i = 0, $c = sizeof($this->commonEffects); $i < $c; $i++) {
             $effect = Effect::makeFromId($this->commonEffects[$i], $this->mod);

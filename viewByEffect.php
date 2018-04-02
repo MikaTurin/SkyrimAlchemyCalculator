@@ -21,6 +21,7 @@ if (!empty($_REQUEST['id'])) {
     $a = getEffect($id, $mod);
     $editorid = $a['editorId'];
     $cost = $a['baseCost'] + 0;
+    $description = $a['description'];
     $cnt = sizeof($r);
 }
 
@@ -56,6 +57,7 @@ echo getIndexBlock();
     <?php echo $flt->html2();?>
     <?php if ($r): drawtable($r);?>
     <br><small>count: <?php echo $cnt;?>; effect: (<?php echo $id;?>) <?php echo $editorid;?>; cost: <?php echo $cost;?></small>
+    <br><small><?php echo htmlspecialchars($description);?></small>
     <?php endif;?>
 </div>
 

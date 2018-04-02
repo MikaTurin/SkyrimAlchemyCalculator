@@ -22,7 +22,8 @@ SELECT
   sum(if(i.rarity = 3, 1, 0)) AS rarity3,
   sum(if(i.rarity = 4, 1, 0)) AS rarity4,
   sum(if(i.rarity = 5, 1, 0)) AS rarity5,
-  COUNT(i.id) AS total
+  COUNT(i.id) AS total,
+  e.modded
 FROM
   `{$tbl}` e
   LEFT JOIN `ingredients_effects` ie ON ie.effectid=e.id
@@ -41,6 +42,10 @@ $r = Db::fetchAll();
 
 array_walk($r, function (&$el) use ($mod) {
     $el['id'] = '<a href="viewByEffect.php?id='.$el['id'].'&mod='.$mod.'">' . $el['id'] . '</a>';
+    if ($el['modded']) {
+        $el['class'] = 'modded';
+    }
+    unset($el['modded']);
 });
 
 drawtable($r);
