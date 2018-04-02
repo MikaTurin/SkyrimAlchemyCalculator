@@ -4,7 +4,7 @@ use Skyrim\Structure;
 
 class EffectStat extends Structure
 {
-    protected $table = 'ingredients_effects';
+    protected $table = 'ingredients_effects'; //TODO: change to static
 
     protected $id;
     protected $effectId;
